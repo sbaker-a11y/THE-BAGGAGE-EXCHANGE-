@@ -468,6 +468,54 @@ html.anim .empowerment-brunch-cta-sec .reveal{opacity:1;transform:none}
 @media(max-width:920px){.journey-page .journey-hero .wrap{grid-template-columns:1fr;gap:40px}.journey-page .journey-hangwrap{order:-1;min-height:260px}}
 @media(prefers-reduced-motion:reduce){.journey-page .journey-swingtag{animation:none}}
 
+/* H.O.P.E. Bag approved page */
+.hope-bag-page .hope-bag-crumb{background:var(--plum-deep);padding:12px 0;font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:rgba(251,245,236,.6)}
+.hope-bag-page .hope-bag-crumb a:hover{color:var(--gold)}
+.hope-bag-page .hope-bag-crumb .sep{margin:0 8px;color:rgba(217,169,60,.6)}
+.hope-bag-page .hope-bag-hero{position:relative;overflow:hidden;background:linear-gradient(160deg,#2c1d12,#21160F);color:var(--cream)}
+.hope-bag-page .hope-bag-hero::before{content:"";position:absolute;inset:0;background:var(--sheen)}
+.hope-bag-page .hope-bag-hero::after{content:"";position:absolute;width:520px;height:520px;right:-150px;top:-160px;background:radial-gradient(circle,rgba(217,169,60,.18),transparent 70%)}
+.hope-bag-page .hope-bag-hero .wrap{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center;padding:80px 28px 88px}
+.hope-bag-page .hope-bag-hero .lane-code{font-family:var(--mono);font-size:12px;letter-spacing:.2em;font-weight:700;color:var(--gold)}
+.hope-bag-page .hope-bag-hero h1{font-size:clamp(42px,6vw,74px);margin:14px 0 10px;line-height:1;color:var(--cream)}
+.hope-bag-page .hope-bag-hero .tagline{font-family:var(--display);font-style:italic;font-size:26px;color:var(--gold);margin-bottom:22px}
+.hope-bag-page .hope-bag-hero p.desc{font-size:18px;max-width:34em;margin-bottom:26px;color:rgba(251,245,236,.9)}
+.hope-bag-page .hope-bag-hero .cta{display:flex;gap:14px;flex-wrap:wrap}
+.hope-bag-page .hope-bag-hangwrap{display:flex;justify-content:center;align-items:flex-start;min-height:340px}
+.hope-bag-page .hope-bag-swingtag{transform-origin:50% 4px;animation:hopeBagSwing 4.4s ease-in-out infinite;filter:drop-shadow(0 22px 30px rgba(0,0,0,.4))}
+@keyframes hopeBagSwing{0%,100%{transform:rotate(-3.2deg)}50%{transform:rotate(3.2deg)}}
+.hope-bag-page .hope-bag-lanes{background:var(--cream-surface)}
+.hope-bag-page .hope-bag-flow{position:relative;max-width:720px;margin:0 auto}
+.hope-bag-page .hope-bag-flow::before{content:"";position:absolute;left:27px;top:40px;bottom:40px;width:2px;background:linear-gradient(180deg,#D9A93C,#6F9072,#4D1A33);opacity:.55}
+.hope-bag-page .hope-bag-fstep{display:flex;gap:24px;align-items:flex-start;position:relative;padding:16px 0}
+.hope-bag-page .hope-bag-fnode{flex:none;width:56px;height:56px;border-radius:50%;background:var(--cream-hi);border:2px solid var(--c);color:var(--c);font-family:var(--mono);font-weight:700;font-size:15px;display:flex;align-items:center;justify-content:center;z-index:1;box-shadow:var(--shadow-soft)}
+.hope-bag-page .hope-bag-fbody{padding-top:5px}
+.hope-bag-page .hope-bag-fname{font-family:var(--mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--c);font-weight:700}
+.hope-bag-page .hope-bag-fbody h3{font-size:22px;margin:4px 0;color:var(--plum)}
+.hope-bag-page .hope-bag-fbody .lead{font-family:var(--display);font-style:italic;color:#7a5a2a;font-size:17px;margin-bottom:5px}
+.hope-bag-page .hope-bag-fbody p{font-size:15px;color:#54453a;max-width:34em}
+.hope-bag-page .hope-bag-inside{background:var(--cream-surface)}
+.hope-bag-page .hope-bag-feat{max-width:820px;margin:0 auto;display:flex;flex-direction:column;gap:14px}
+.hope-bag-page .hope-bag-feat .row{display:flex;gap:16px;align-items:flex-start;background:#fff;border-radius:13px;padding:20px 22px;box-shadow:var(--shadow-soft)}
+.hope-bag-page .hope-bag-feat .ic{flex:none;width:42px;height:42px;border-radius:11px;background:var(--c);display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--display);font-weight:700;font-size:18px}
+.hope-bag-page .hope-bag-feat h3{font-size:18px;margin-bottom:3px}
+.hope-bag-page .hope-bag-feat p{font-size:14.5px;color:#54453a}
+.hope-bag-page .hope-bag-earned{background:var(--espresso);color:var(--cream);text-align:center}
+.hope-bag-page .hope-bag-earned .wrap{max-width:700px}
+.hope-bag-page .hope-bag-earned .pill{display:inline-block;font-family:var(--mono);font-size:11px;letter-spacing:.16em;color:var(--gold);border:1px solid var(--gold);border-radius:30px;padding:7px 16px;margin-bottom:18px}
+.hope-bag-page .hope-bag-earned h2{color:var(--cream);font-size:clamp(26px,3.4vw,38px);margin-bottom:16px}
+.hope-bag-page .hope-bag-earned p{font-size:17px;color:rgba(251,245,236,.86);margin-bottom:26px}
+.hope-bag-page .hope-bag-earned .cta{display:flex;justify-content:center}
+.hope-bag-page .hope-bag-cta{background:var(--plum-surface);color:var(--cream);text-align:center;position:relative;overflow:hidden}
+.hope-bag-page .hope-bag-cta::before{content:"";position:absolute;inset:0;background:var(--sheen)}
+.hope-bag-page .hope-bag-cta .wrap{position:relative}
+.hope-bag-page .hope-bag-cta h2{color:var(--cream);font-size:clamp(30px,4vw,46px);margin-bottom:14px}
+.hope-bag-page .hope-bag-cta p{color:rgba(251,245,236,.85);font-size:17px;max-width:34em;margin:0 auto 28px}
+.hope-bag-page .hope-bag-cta .cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.hope-bag-page .hope-bag-cta .note{margin-top:20px;font-family:var(--mono);font-size:12px;letter-spacing:.12em;color:var(--gold)}
+@media(max-width:920px){.hope-bag-page .hope-bag-hero .wrap{grid-template-columns:1fr;gap:40px}.hope-bag-page .hope-bag-hangwrap{order:-1;min-height:260px}}
+@media(prefers-reduced-motion:reduce){.hope-bag-page .hope-bag-swingtag{animation:none}}
+
 /* Founder teaser */
 .founder{background:var(--cream)}
 .founder .wrap{max-width:820px;text-align:center}
