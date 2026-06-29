@@ -401,6 +401,38 @@ html.anim .empowerment-brunch-band-cream .reveal,
 html.anim .empowerment-brunch-bag .reveal,
 html.anim .empowerment-brunch-cta-sec .reveal{opacity:1;transform:none}
 
+/* Four H.O.P.E. Beats approved page */
+.beats-page .beats-crumb{background:var(--plum-deep);padding:12px 0;font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:rgba(251,245,236,.6)}
+.beats-page .beats-crumb a:hover{color:var(--gold)}
+.beats-page .beats-crumb .sep{margin:0 8px;color:rgba(217,169,60,.6)}
+.beats-page .beats-hero{position:relative;overflow:hidden;background:linear-gradient(160deg,#2c1d12,#21160F);color:var(--cream)}
+.beats-page .beats-hero::before{content:"";position:absolute;inset:0;background:var(--sheen)}
+.beats-page .beats-hero::after{content:"";position:absolute;width:520px;height:520px;right:-150px;top:-160px;background:radial-gradient(circle,rgba(217,169,60,.18),transparent 70%)}
+.beats-page .beats-hero .wrap{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center;padding:80px 28px 88px}
+.beats-page .beats-hero .lane-code{font-family:var(--mono);font-size:12px;letter-spacing:.2em;font-weight:700;color:var(--gold)}
+.beats-page .beats-hero h1{font-size:clamp(42px,6vw,74px);margin:14px 0 10px;line-height:1;color:var(--cream)}
+.beats-page .beats-hero .tagline{font-family:var(--display);font-style:italic;font-size:26px;color:var(--gold);margin-bottom:22px}
+.beats-page .beats-hero p.desc{font-size:18px;max-width:34em;margin-bottom:26px;color:rgba(251,245,236,.9)}
+.beats-page .beats-hero .cta{display:flex;gap:14px;flex-wrap:wrap}
+.beats-page .hangwrap{display:flex;justify-content:center;align-items:flex-start;min-height:340px}
+.beats-page .swingtag{transform-origin:50% 4px;animation:swing 4.4s ease-in-out infinite;filter:drop-shadow(0 22px 30px rgba(0,0,0,.4))}
+@keyframes swing{0%,100%{transform:rotate(-3.2deg)}50%{transform:rotate(3.2deg)}}
+.beats-page .beats-rhythm{background:var(--cream-surface)}
+.beats-page .beats-cardgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;max-width:900px;margin:0 auto}
+.beats-page .beats-bcard{background:#fff;border-radius:16px;padding:30px 28px;box-shadow:var(--shadow-soft);border-top:5px solid var(--c);position:relative}
+.beats-page .beats-bcard .n{font-family:var(--mono);font-size:12px;letter-spacing:.18em;color:var(--c);font-weight:700;margin-bottom:8px}
+.beats-page .beats-bcard h3{font-size:23px;margin-bottom:8px}
+.beats-page .beats-bcard p{font-size:15px;color:#54453a}
+.beats-page .beats-cta{background:var(--plum-surface);color:var(--cream);text-align:center;position:relative;overflow:hidden}
+.beats-page .beats-cta::before{content:"";position:absolute;inset:0;background:var(--sheen)}
+.beats-page .beats-cta .wrap{position:relative}
+.beats-page .beats-cta h2{color:var(--cream);font-size:clamp(30px,4vw,46px);margin-bottom:14px}
+.beats-page .beats-cta p{color:rgba(251,245,236,.85);font-size:17px;max-width:34em;margin:0 auto 28px}
+.beats-page .beats-cta .cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.beats-page .beats-cta .note{margin-top:20px;font-family:var(--mono);font-size:12px;letter-spacing:.12em;color:var(--gold)}
+@media(max-width:920px){.beats-page .beats-hero .wrap{grid-template-columns:1fr;gap:40px}.beats-page .hangwrap{order:-1;min-height:260px}.beats-page .beats-cardgrid{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.beats-page .swingtag{animation:none}}
+
 /* Founder teaser */
 .founder{background:var(--cream)}
 .founder .wrap{max-width:820px;text-align:center}
