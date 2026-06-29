@@ -631,6 +631,14 @@ html.anim .empowerment-brunch-cta-sec .reveal{opacity:1;transform:none}
 .stat .arr{color:rgba(251,245,236,.6);font-size:24px}
 .stat .cap{font-size:15px;color:rgba(251,245,236,.85);max-width:30em}
 .stat .cap span{font-family:var(--mono);font-size:11px;letter-spacing:.18em;color:var(--gold)}
+.founder-proof{display:grid;grid-template-columns:.9fr 1.1fr;gap:22px;margin:42px 0 4px;align-items:stretch;scroll-margin-top:110px}
+.proof-photo{position:relative;min-height:390px;border-radius:18px;overflow:hidden;background:var(--plum-surface);box-shadow:var(--shadow-press);border:1px solid rgba(217,169,60,.32)}
+.proof-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(33,22,15,0) 46%,rgba(33,22,15,.78) 100%);pointer-events:none}
+.proof-photo img{width:100%;height:100%;object-fit:cover;display:block}
+.proof-before img{object-position:center 35%}
+.proof-sky img{object-position:center center}
+.proof-photo figcaption{position:absolute;left:20px;right:20px;bottom:18px;z-index:1;font-family:var(--display);font-size:22px;font-weight:700;line-height:1.18;color:var(--cream);text-shadow:0 2px 14px rgba(0,0,0,.5)}
+.proof-photo figcaption span{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
 .about-roots{background:var(--espresso);color:var(--cream);padding:88px 0;position:relative;overflow:hidden}
 .about-roots::after{content:"";position:absolute;width:460px;height:460px;right:-160px;top:-180px;background:radial-gradient(circle,rgba(111,144,114,.22),transparent 70%)}
 .about-roots .wrap{position:relative}
@@ -731,6 +739,8 @@ html.anim .reveal.in{opacity:1;transform:none}
   .hero-art{order:-1}
   .about-hero .wrap{grid-template-columns:1fr;gap:38px}
   .id-card{order:-1}
+  .founder-proof{grid-template-columns:1fr}
+  .proof-photo{min-height:420px}
   .stages,.beats{grid-template-columns:repeat(2,1fr)}
   .tags{grid-template-columns:repeat(2,1fr)}
   .bag .wrap,.passport-sec .wrap,.pod .wrap{grid-template-columns:1fr;gap:30px}
