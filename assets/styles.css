@@ -480,6 +480,50 @@ html.anim .empowerment-brunch-band-cream .reveal,
 html.anim .empowerment-brunch-bag .reveal,
 html.anim .empowerment-brunch-cta-sec .reveal{opacity:1;transform:none}
 
+/* Approved H.O.P.E. Shop page layout */
+.hope-shop-crumb{background:var(--plum-deep);padding:12px 0;font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:rgba(251,245,236,.6)}
+.hope-shop-crumb a:hover{color:var(--gold)}
+.hope-shop-crumb .sep{margin:0 8px;color:rgba(217,169,60,.6)}
+.hope-shop-hero{position:relative;overflow:hidden;background:linear-gradient(160deg,#F2E6CF 0%,#E9D2AC 60%,#E0C49C 120%);color:var(--espresso)}
+.hope-shop-hero::before{content:"";position:absolute;inset:0;background:var(--sheen)}
+.hope-shop-hero::after{content:"";position:absolute;width:520px;height:520px;right:-150px;top:-160px;background:radial-gradient(circle,rgba(217,169,60,.18),transparent 70%)}
+.hope-shop-hero .wrap{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center;padding-top:80px;padding-bottom:88px}
+.hope-shop-lane-code{font-family:var(--mono);font-size:12px;letter-spacing:.2em;font-weight:700;color:#8a6a3e}
+.hope-shop-hero h1{color:var(--plum);font-size:clamp(42px,6vw,74px);margin:14px 0 10px;line-height:1}
+.hope-shop-tagline{font-family:var(--display);font-style:italic;font-size:26px;color:#A9781F;margin-bottom:22px}
+.hope-shop-hero p.desc{font-size:18px;max-width:34em;margin-bottom:26px;color:#4a3a30}
+.hope-shop-hero .cta{display:flex;gap:14px;flex-wrap:wrap}
+.hope-shop-hangwrap{display:flex;justify-content:center;align-items:flex-start;min-height:340px}
+.hope-shop-swingtag{transform-origin:50% 4px;animation:shopSwing 4.4s ease-in-out infinite;filter:drop-shadow(0 22px 30px rgba(0,0,0,.4))}
+@keyframes shopSwing{0%,100%{transform:rotate(-3.2deg)}50%{transform:rotate(3.2deg)}}
+.hope-shop-collection{background:var(--cream-surface)}
+.hope-shop-prodgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;max-width:1010px;margin:0 auto}
+.hope-shop-prod{background:#fff;border-radius:16px;padding:24px;box-shadow:var(--shadow-soft);border-top:4px solid var(--sand);display:flex;flex-direction:column}
+.hope-shop-prod .k{font-family:var(--mono);font-size:10px;letter-spacing:.16em;color:#9a7846;font-weight:700;margin-bottom:10px}
+.hope-shop-prod h3{font-size:19px;margin-bottom:6px}
+.hope-shop-prod>p{font-size:14px;color:#54453a;flex:1}
+.hope-shop-prod .price{font-family:var(--display);font-style:italic;color:var(--plum);font-size:18px;margin:12px 0 14px;flex:0}
+.hope-shop-prod .nm{align-self:flex-start;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#fff;background:#B8881F;padding:9px 16px;border-radius:30px;font-weight:700;text-decoration:none;transition:background .2s}
+.hope-shop-prod .nm:hover{background:#A9781F}
+.hope-shop-exclusive{background:var(--espresso);color:var(--cream);text-align:center}
+.hope-shop-exclusive .wrap{max-width:700px}
+.hope-shop-exclusive span{display:inline-block;font-family:var(--mono);font-size:11px;letter-spacing:.16em;color:var(--gold);border:1px solid var(--gold);border-radius:30px;padding:7px 16px;margin-bottom:18px}
+.hope-shop-exclusive h2{color:var(--cream);font-size:clamp(26px,3.4vw,38px);margin-bottom:16px}
+.hope-shop-exclusive p{font-size:17px;color:rgba(251,245,236,.86);margin-bottom:26px}
+.hope-shop-cta-sec{background:var(--plum-surface);color:var(--cream);text-align:center;position:relative;overflow:hidden}
+.hope-shop-cta-sec::before{content:"";position:absolute;inset:0;background:var(--sheen)}
+.hope-shop-cta-sec .wrap{position:relative}
+.hope-shop-cta-sec h2{color:var(--cream);font-size:clamp(30px,4vw,46px);margin-bottom:14px}
+.hope-shop-cta-sec p{color:rgba(251,245,236,.85);font-size:17px;max-width:34em;margin:0 auto 28px}
+.hope-shop-cta-sec .cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.hope-shop-cta-sec .note{margin-top:20px;font-family:var(--mono);font-size:12px;letter-spacing:.12em;color:var(--gold)}
+html.anim .hope-shop-collection .reveal,
+html.anim .hope-shop-exclusive .reveal,
+html.anim .hope-shop-cta-sec .reveal{opacity:1;transform:none}
+@media(max-width:920px){.hope-shop-hero .wrap{grid-template-columns:1fr;gap:40px}.hope-shop-hangwrap{order:-1;min-height:260px}.hope-shop-prodgrid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.hope-shop-prodgrid{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.hope-shop-swingtag{animation:none}}
+
 /* Four H.O.P.E. Beats approved page */
 .beats-page .beats-crumb{background:var(--plum-deep);padding:12px 0;font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:rgba(251,245,236,.6)}
 .beats-page .beats-crumb a:hover{color:var(--gold)}
