@@ -522,7 +522,7 @@ html.anim .hope-shop-cta-sec .reveal{opacity:1;transform:none}
 .workshops-crumb{background:var(--plum-deep);padding:12px 0;font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:rgba(251,245,236,.6)}
 .workshops-crumb a:hover{color:var(--gold)}
 .workshops-crumb .sep{margin:0 8px;color:rgba(217,169,60,.6)}
-.workshops-hero{position:relative;overflow:hidden;background:linear-gradient(160deg,#7E9F82 0%,#6F9072 55%,#566F59 115%);color:var(--cream)}
+.workshops-hero{position:relative;overflow:hidden;background:linear-gradient(160deg,#577A5B 0%,#456850 55%,#33503C 115%);color:var(--cream)}
 .workshops-hero::before{content:"";position:absolute;inset:0;background:var(--sheen)}
 .workshops-hero::after{content:"";position:absolute;width:520px;height:520px;right:-150px;top:-160px;background:radial-gradient(circle,rgba(217,169,60,.18),transparent 70%)}
 .workshops-hero .wrap{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center;padding-top:80px;padding-bottom:88px}
