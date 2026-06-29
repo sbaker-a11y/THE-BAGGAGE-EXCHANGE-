@@ -561,6 +561,41 @@ html.anim .workshops-cta-sec .reveal{opacity:1;transform:none}
 @media(max-width:680px){.workshops-offer{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){.workshops-swingtag{animation:none}}
 
+/* Approved Community Engagement page layout */
+.community-page .community-crumb{background:var(--plum-deep);padding:12px 0;font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:rgba(251,245,236,.6)}
+.community-page .community-crumb a:hover{color:var(--gold)}
+.community-page .community-crumb .sep{margin:0 8px;color:rgba(217,169,60,.6)}
+.community-page .community-hero{position:relative;overflow:hidden;background:linear-gradient(160deg,#577A5B 0%,#456850 55%,#33503C 115%);color:var(--cream)}
+.community-page .community-hero::before{content:"";position:absolute;inset:0;background:var(--sheen)}
+.community-page .community-hero::after{content:"";position:absolute;width:520px;height:520px;right:-150px;top:-160px;background:radial-gradient(circle,rgba(217,169,60,.18),transparent 70%)}
+.community-page .community-hero .wrap{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center;padding-top:80px;padding-bottom:88px}
+.community-page .community-hero .lane-code{font-family:var(--mono);font-size:12px;letter-spacing:.2em;font-weight:700;color:var(--gold)}
+.community-page .community-hero h1{font-size:clamp(42px,6vw,74px);margin:14px 0 10px;line-height:1;color:var(--cream)}
+.community-page .community-hero .tagline{font-family:var(--display);font-style:italic;font-size:26px;color:var(--gold);margin-bottom:22px}
+.community-page .community-hero p.desc{font-size:18px;max-width:34em;margin-bottom:26px;color:rgba(251,245,236,.9)}
+.community-page .community-hero .cta{display:flex;gap:14px;flex-wrap:wrap}
+.community-page .hangwrap{display:flex;justify-content:center;align-items:flex-start;min-height:340px}
+.community-page .swingcase{transform-origin:50% 12%;animation:communitySwing 4.6s ease-in-out infinite;filter:drop-shadow(0 22px 30px rgba(0,0,0,.4))}
+@keyframes communitySwing{0%,100%{transform:rotate(-2.4deg)}50%{transform:rotate(2.4deg)}}
+.community-page .community-offer-sec{background:var(--cream-surface)}
+.community-page .offer{max-width:860px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.community-page .ocard{background:#fff;border-radius:14px;padding:24px;box-shadow:var(--shadow-soft);border-top:4px solid var(--c)}
+.community-page .ocard .k{font-family:var(--mono);font-size:11px;letter-spacing:.16em;color:var(--c);font-weight:700;margin-bottom:8px}
+.community-page .ocard h3{font-size:20px;margin-bottom:6px}
+.community-page .ocard p{font-size:14.5px;color:#54453a}
+.community-page .community-cta-sec{background:var(--plum-surface);color:var(--cream);text-align:center;position:relative;overflow:hidden}
+.community-page .community-cta-sec::before{content:"";position:absolute;inset:0;background:var(--sheen)}
+.community-page .community-cta-sec .wrap{position:relative}
+.community-page .community-cta-sec h2{color:var(--cream);font-size:clamp(30px,4vw,46px);margin-bottom:14px}
+.community-page .community-cta-sec p{color:rgba(251,245,236,.85);font-size:17px;max-width:34em;margin:0 auto 28px}
+.community-page .community-cta-sec .cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.community-page .community-cta-sec .note{margin-top:20px;font-family:var(--mono);font-size:12px;letter-spacing:.12em;color:var(--gold)}
+html.anim .community-page .community-offer-sec .reveal,
+html.anim .community-page .community-cta-sec .reveal{opacity:1;transform:none}
+@media(max-width:920px){.community-page .community-hero .wrap{grid-template-columns:1fr;gap:40px}.community-page .hangwrap{order:-1;min-height:260px}.community-page .offer{grid-template-columns:1fr 1fr}}
+@media(max-width:680px){.community-page .offer{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.community-page .swingcase{animation:none}}
+
 /* Four H.O.P.E. Beats approved page */
 .beats-page .beats-crumb{background:var(--plum-deep);padding:12px 0;font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:rgba(251,245,236,.6)}
 .beats-page .beats-crumb a:hover{color:var(--gold)}
