@@ -524,6 +524,49 @@ html.anim .hope-shop-cta-sec .reveal{opacity:1;transform:none}
 @media(max-width:560px){.hope-shop-prodgrid{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){.hope-shop-swingtag{animation:none}}
 
+/* Approved Carry On Workshops page layout */
+.workshops-crumb{background:var(--plum-deep);padding:12px 0;font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:rgba(251,245,236,.6)}
+.workshops-crumb a:hover{color:var(--gold)}
+.workshops-crumb .sep{margin:0 8px;color:rgba(217,169,60,.6)}
+.workshops-hero{position:relative;overflow:hidden;background:linear-gradient(160deg,#7E9F82 0%,#6F9072 55%,#566F59 115%);color:var(--cream)}
+.workshops-hero::before{content:"";position:absolute;inset:0;background:var(--sheen)}
+.workshops-hero::after{content:"";position:absolute;width:520px;height:520px;right:-150px;top:-160px;background:radial-gradient(circle,rgba(217,169,60,.18),transparent 70%)}
+.workshops-hero .wrap{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center;padding-top:80px;padding-bottom:88px}
+.workshops-lane-code{font-family:var(--mono);font-size:12px;letter-spacing:.2em;font-weight:700;color:var(--gold)}
+.workshops-hero h1{color:var(--cream);font-size:clamp(42px,6vw,74px);margin:14px 0 10px;line-height:1}
+.workshops-tagline{font-family:var(--display);font-style:italic;font-size:26px;color:var(--gold);margin-bottom:22px}
+.workshops-hero p.desc{font-size:18px;max-width:34em;margin-bottom:26px;color:rgba(251,245,236,.9)}
+.workshops-hero .cta{display:flex;gap:14px;flex-wrap:wrap}
+.workshops-hangwrap{display:flex;justify-content:center;align-items:flex-start;min-height:340px}
+.workshops-swingtag{transform-origin:50% 4px;animation:workshopsSwing 4.4s ease-in-out infinite;filter:drop-shadow(0 22px 30px rgba(0,0,0,.4))}
+@keyframes workshopsSwing{0%,100%{transform:rotate(-3.2deg)}50%{transform:rotate(3.2deg)}}
+.workshops-expect,.workshops-bag{background:var(--cream-surface)}
+.workshops-offer{max-width:860px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.workshops-ocard{background:#fff;border-radius:14px;padding:24px;box-shadow:var(--shadow-soft);border-top:4px solid var(--c)}
+.workshops-ocard .k{font-family:var(--mono);font-size:11px;letter-spacing:.16em;color:var(--c);font-weight:700;margin-bottom:8px}
+.workshops-ocard h3{font-size:20px;margin-bottom:6px}
+.workshops-ocard p{font-size:14.5px;color:#54453a}
+.workshops-bag h2{color:var(--plum);font-size:clamp(28px,3.6vw,42px);margin:14px 0}
+.workshops-bag p{font-size:17px;color:#4a3a30}
+.workshops-feat{max-width:820px;margin:0 auto;display:flex;flex-direction:column;gap:14px}
+.workshops-feat .row{display:flex;gap:16px;align-items:flex-start;background:#fff;border-radius:13px;padding:20px 22px;box-shadow:var(--shadow-soft)}
+.workshops-feat .row .ic{flex:none;width:42px;height:42px;border-radius:11px;background:var(--c);display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--display);font-weight:700;font-size:18px}
+.workshops-feat .row h3{font-size:18px;margin-bottom:3px}
+.workshops-feat .row p{font-size:14.5px;color:#54453a;margin:0}
+.workshops-cta-sec{background:var(--plum-surface);color:var(--cream);text-align:center;position:relative;overflow:hidden}
+.workshops-cta-sec::before{content:"";position:absolute;inset:0;background:var(--sheen)}
+.workshops-cta-sec .wrap{position:relative}
+.workshops-cta-sec h2{color:var(--cream);font-size:clamp(30px,4vw,46px);margin-bottom:14px}
+.workshops-cta-sec p{color:rgba(251,245,236,.85);font-size:17px;max-width:34em;margin:0 auto 28px}
+.workshops-cta-sec .cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.workshops-cta-sec .note{margin-top:20px;font-family:var(--mono);font-size:12px;letter-spacing:.12em;color:var(--gold)}
+html.anim .workshops-expect .reveal,
+html.anim .workshops-bag .reveal,
+html.anim .workshops-cta-sec .reveal{opacity:1;transform:none}
+@media(max-width:920px){.workshops-hero .wrap{grid-template-columns:1fr;gap:40px}.workshops-hangwrap{order:-1;min-height:260px}.workshops-offer{grid-template-columns:1fr 1fr}}
+@media(max-width:680px){.workshops-offer{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.workshops-swingtag{animation:none}}
+
 /* Four H.O.P.E. Beats approved page */
 .beats-page .beats-crumb{background:var(--plum-deep);padding:12px 0;font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:rgba(251,245,236,.6)}
 .beats-page .beats-crumb a:hover{color:var(--gold)}
