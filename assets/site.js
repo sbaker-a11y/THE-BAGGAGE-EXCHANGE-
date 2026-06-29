@@ -1,5 +1,10 @@
 /* THE Baggage Exchange — shared site behavior */
 (function () {
+  // Arm reveal animations only if motion is allowed; otherwise content stays visible.
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!reduce && 'IntersectionObserver' in window) {
+    document.documentElement.classList.add('anim');
+  }
   // Reveal on scroll
   var io = new IntersectionObserver(function (entries) {
     entries.forEach(function (e) {
@@ -10,6 +15,14 @@
     });
   }, { threshold: 0.14 });
   document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+
+  // Failsafe: never leave content invisible. If the observer hasn't revealed an
+  // element after a short delay (e.g. it never entered the viewport), reveal it.
+  window.setTimeout(function () {
+    document.querySelectorAll('.reveal:not(.in)').forEach(function (el) {
+      el.classList.add('in');
+    });
+  }, 2500);
 
   // Desktop dropdowns: open on hover (CSS) + click/keyboard for accessibility
   document.querySelectorAll('.nav .has-menu').forEach(function (group) {

@@ -268,9 +268,11 @@ h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.08;color:var(-
 .foot .legal-block p{line-height:1.6}
 .foot .legal-block .tm-line{color:rgba(251,245,236,.7);font-weight:600}
 
-/* Reveal motion */
-.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
-.reveal.in{opacity:1;transform:none}
+/* Reveal motion — visible by default; only hidden once JS arms the animation,
+   so content always renders even without JS or before scroll. */
+.reveal{opacity:1;transform:none}
+html.anim .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+html.anim .reveal.in{opacity:1;transform:none}
 
 @media(max-width:920px){
   .hero .wrap{grid-template-columns:1fr;gap:36px}
