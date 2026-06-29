@@ -112,3 +112,7 @@ Gold-metal gradient `#F0D27A → #D4A53C → #A9781F`. Fonts: Playfair Display (
 1. Provide the exact longer founder story to fill the About `ABOUT_LONG_COPY_NEEDED_FROM_USER` gap.
 2. Parent agent may deploy a separate preview of this folder (this subagent did not deploy, per instructions).
 3. Optionally wire the contact/lead forms to a real backend or form service before launch (currently static + mailto fallback by design).
+
+## Preview deployment fix
+
+After initial private-preview validation, generated HTML links were converted from root-absolute paths to relative paths so the site loads correctly under path-based private preview URLs. This changed only files inside this separate project folder.
