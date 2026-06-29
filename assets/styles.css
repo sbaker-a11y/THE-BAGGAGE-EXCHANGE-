@@ -84,6 +84,7 @@ h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.08;color:var(-
 .hero-art .passport:hover{transform:rotate(-3deg) translateY(-6px)}
 .hero-art .tagline-chip{position:absolute;bottom:6px;left:50%;transform:translateX(-50%) rotate(-6deg);background:var(--gold-metal);color:#3A2A0C;font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.12em;padding:7px 14px;border-radius:30px;box-shadow:0 10px 22px -10px rgba(0,0,0,.5);white-space:nowrap}
 .journey-arrows{display:flex;gap:10px;align-items:center;flex-wrap:wrap;font-family:var(--mono);font-size:12.5px;letter-spacing:.14em;color:rgba(251,245,236,.8);margin-top:6px}
+.hero .lead-close{margin-top:16px;margin-bottom:2px;font-weight:600;color:rgba(251,245,236,.95)}
 .journey-arrows b{color:var(--gold);font-weight:700}
 
 /* Sub-page hero (deep plum) */
