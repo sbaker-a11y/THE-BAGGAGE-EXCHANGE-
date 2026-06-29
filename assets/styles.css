@@ -433,6 +433,41 @@ html.anim .empowerment-brunch-cta-sec .reveal{opacity:1;transform:none}
 @media(max-width:920px){.beats-page .beats-hero .wrap{grid-template-columns:1fr;gap:40px}.beats-page .hangwrap{order:-1;min-height:260px}.beats-page .beats-cardgrid{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){.beats-page .swingtag{animation:none}}
 
+/* H.O.P.E. Journey approved page */
+.journey-page .journey-crumb{background:var(--plum-deep);padding:12px 0;font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:rgba(251,245,236,.6)}
+.journey-page .journey-crumb a:hover{color:var(--gold)}
+.journey-page .journey-crumb .sep{margin:0 8px;color:rgba(217,169,60,.6)}
+.journey-page .journey-hero{position:relative;overflow:hidden;background:var(--plum-surface);color:var(--cream)}
+.journey-page .journey-hero::before{content:"";position:absolute;inset:0;background:var(--sheen)}
+.journey-page .journey-hero::after{content:"";position:absolute;width:520px;height:520px;right:-150px;top:-160px;background:radial-gradient(circle,rgba(217,169,60,.18),transparent 70%)}
+.journey-page .journey-hero .wrap{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center;padding:80px 28px 88px}
+.journey-page .journey-hero .lane-code{font-family:var(--mono);font-size:12px;letter-spacing:.2em;font-weight:700;color:var(--gold)}
+.journey-page .journey-hero h1{font-size:clamp(42px,6vw,74px);margin:14px 0 10px;line-height:1;color:var(--cream)}
+.journey-page .journey-hero .tagline{font-family:var(--display);font-style:italic;font-size:26px;color:var(--gold);margin-bottom:22px}
+.journey-page .journey-hero p.desc{font-size:18px;max-width:34em;margin-bottom:26px;color:rgba(251,245,236,.9)}
+.journey-page .journey-hero .cta{display:flex;gap:14px;flex-wrap:wrap}
+.journey-page .journey-hangwrap{display:flex;justify-content:center;align-items:flex-start;min-height:340px}
+.journey-page .journey-swingtag{transform-origin:50% 4px;animation:journeySwing 4.4s ease-in-out infinite;filter:drop-shadow(0 22px 30px rgba(0,0,0,.4))}
+@keyframes journeySwing{0%,100%{transform:rotate(-3.2deg)}50%{transform:rotate(3.2deg)}}
+.journey-page .journey-stages{background:var(--cream-surface)}
+.journey-page .journey-flow{position:relative;max-width:720px;margin:0 auto}
+.journey-page .journey-flow::before{content:"";position:absolute;left:27px;top:40px;bottom:40px;width:2px;background:linear-gradient(180deg,#6F9072,#B8881F,#C5746E,#4D1A33);opacity:.55}
+.journey-page .journey-fstep{display:flex;gap:24px;align-items:flex-start;position:relative;padding:16px 0}
+.journey-page .journey-fnode{flex:none;width:56px;height:56px;border-radius:50%;background:var(--cream-hi);border:2px solid var(--c);color:var(--c);font-family:var(--mono);font-weight:700;font-size:15px;display:flex;align-items:center;justify-content:center;z-index:1;box-shadow:var(--shadow-soft)}
+.journey-page .journey-fbody{padding-top:5px}
+.journey-page .journey-fname{font-family:var(--mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--c);font-weight:700}
+.journey-page .journey-fbody .lead{font-family:var(--display);font-style:italic;color:#7a5a2a;font-size:17px;margin-bottom:5px}
+.journey-page .journey-fbody p{font-size:15px;color:#54453a;max-width:34em}
+.journey-page .journey-cta{background:var(--plum-surface);color:var(--cream);text-align:center;position:relative;overflow:hidden}
+.journey-page .journey-cta::before{content:"";position:absolute;inset:0;background:var(--sheen)}
+.journey-page .journey-cta .wrap{position:relative}
+.journey-page .journey-cta h2{color:var(--cream);font-size:clamp(30px,4vw,46px);margin-bottom:14px}
+.journey-page .journey-cta p{color:rgba(251,245,236,.85);font-size:17px;max-width:34em;margin:0 auto 28px}
+.journey-page .journey-cta .cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.journey-page .journey-cta .note{margin-top:20px;font-family:var(--mono);font-size:12px;letter-spacing:.12em;color:var(--gold)}
+@media(max-width:920px){.journey-page .journey-hero .wrap{grid-template-columns:1fr;gap:40px}.journey-page .journey-hangwrap{order:-1;min-height:260px}}
+@media(prefers-reduced-motion:reduce){.journey-page .journey-swingtag{animation:none}}
+
 /* Founder teaser */
 .founder{background:var(--cream)}
 .founder .wrap{max-width:820px;text-align:center}
