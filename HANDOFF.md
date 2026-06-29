@@ -116,3 +116,7 @@ Gold-metal gradient `#F0D27A → #D4A53C → #A9781F`. Fonts: Playfair Display (
 ## Preview deployment fix
 
 After initial private-preview validation, generated HTML links were converted from root-absolute paths to relative paths so the site loads correctly under path-based private preview URLs. This changed only files inside this separate project folder.
+
+## Direct file preview route fix
+
+Internal route links now point directly to each route folder’s `index.html` file because the private direct-file preview host does not resolve directory indexes for relative route URLs.
