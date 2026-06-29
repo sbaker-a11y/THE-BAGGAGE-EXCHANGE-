@@ -437,6 +437,9 @@ html.anim .exchange-house-cta-sec .reveal{opacity:1;transform:none}
 .empowerment-brunch-tagline{font-family:var(--display);font-style:italic;font-size:26px;color:#A9781F;margin-bottom:22px}
 .empowerment-brunch-hero p.desc{font-size:18px;max-width:34em;margin-bottom:26px;color:#4a3a30}
 .empowerment-brunch-hero .cta{display:flex;gap:14px;flex-wrap:wrap}
+.empowerment-brunch-hangwrap{display:flex;justify-content:center;align-items:flex-start;min-height:340px}
+.empowerment-brunch-swingtag{transform-origin:50% 4px;animation:brunchSwing 4.4s ease-in-out infinite;filter:drop-shadow(0 22px 30px rgba(0,0,0,.4))}
+@keyframes brunchSwing{0%,100%{transform:rotate(-3.2deg)}50%{transform:rotate(3.2deg)}}
 .empowerment-brunch-bigtag{position:relative;border-radius:18px;padding:40px 28px 26px;width:300px;justify-self:center;box-shadow:var(--shadow-press);transform:rotate(2.5deg);background:var(--brunch-tag-bg);color:var(--brunch-tag-ink)}
 .empowerment-brunch-bigtag::before{content:"";position:absolute;inset:10px;border:1.6px dashed var(--brunch-tag-stitch);border-radius:11px;opacity:.7}
 .empowerment-brunch-bigtag .grommet{position:absolute;top:16px;left:50%;transform:translateX(-50%);width:22px;height:22px;border-radius:50%;border:4px solid var(--brunch-tag-stitch);background:rgba(0,0,0,.18)}
@@ -452,14 +455,20 @@ html.anim .exchange-house-cta-sec .reveal{opacity:1;transform:none}
 .empowerment-brunch-dcard .ic{font-family:var(--mono);font-size:11px;letter-spacing:.16em;color:var(--brunch-lane-ink);font-weight:700;margin-bottom:10px}
 .empowerment-brunch-dcard h3{font-size:19px;margin-bottom:8px}
 .empowerment-brunch-dcard p{font-size:14.5px;color:#54453a}
-.empowerment-brunch-bag{background:var(--espresso);color:var(--cream);position:relative;overflow:hidden}
-.empowerment-brunch-bag::after{content:"";position:absolute;width:480px;height:480px;left:-160px;bottom:-200px;background:radial-gradient(circle,rgba(217,169,60,.16),transparent 70%)}
-.empowerment-brunch-bag .wrap{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
-.empowerment-brunch-bag h2{color:var(--cream);font-size:clamp(28px,3.6vw,40px);margin:14px 0 18px}
-.empowerment-brunch-bag p{color:rgba(251,245,236,.86);font-size:17px;margin-bottom:18px}
-.empowerment-brunch-bag ul{list-style:none;border-left:2px dashed rgba(217,169,60,.5);padding-left:24px;display:flex;flex-direction:column;gap:14px}
-.empowerment-brunch-bag li{font-size:15.5px;color:rgba(251,245,236,.9)}
-.empowerment-brunch-bag li b{color:var(--gold);font-family:var(--display)}
+.empowerment-brunch-offer{max-width:860px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.empowerment-brunch-ocard{background:#fff;border-radius:14px;padding:24px;box-shadow:var(--shadow-soft);border-top:4px solid var(--c)}
+.empowerment-brunch-ocard .k{font-family:var(--mono);font-size:11px;letter-spacing:.16em;color:var(--c);font-weight:700;margin-bottom:8px}
+.empowerment-brunch-ocard h3{font-size:20px;margin-bottom:6px}
+.empowerment-brunch-ocard p{font-size:14.5px;color:#54453a}
+.empowerment-brunch-bag{background:var(--cream-surface);color:var(--espresso);position:relative;overflow:hidden}
+.empowerment-brunch-bag .wrap{position:relative}
+.empowerment-brunch-bag h2{color:var(--plum);font-size:clamp(28px,3.6vw,42px);margin:14px 0}
+.empowerment-brunch-bag p{font-size:17px;color:#4a3a30}
+.empowerment-brunch-feat{max-width:820px;margin:0 auto;display:flex;flex-direction:column;gap:14px}
+.empowerment-brunch-feat .row{display:flex;gap:16px;align-items:flex-start;background:#fff;border-radius:13px;padding:20px 22px;box-shadow:var(--shadow-soft)}
+.empowerment-brunch-feat .row .ic{flex:none;width:42px;height:42px;border-radius:11px;background:var(--c);display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--display);font-weight:700;font-size:18px}
+.empowerment-brunch-feat .row h3{font-size:18px;margin-bottom:3px}
+.empowerment-brunch-feat .row p{font-size:14.5px;color:#54453a;margin:0}
 .empowerment-brunch-cta-sec{background:var(--plum-surface);color:var(--cream);text-align:center;position:relative;overflow:hidden}
 .empowerment-brunch-cta-sec::before{content:"";position:absolute;inset:0;background:var(--sheen)}
 .empowerment-brunch-cta-sec .wrap{position:relative}
@@ -810,9 +819,8 @@ html.anim .reveal.in{opacity:1;transform:none}
   .exchange-house-bigtag{order:-1}
   .exchange-house-grid4{grid-template-columns:repeat(2,1fr)}
   .empowerment-brunch-hero .wrap{grid-template-columns:1fr;gap:40px}
-  .empowerment-brunch-bigtag{order:-1}
-  .empowerment-brunch-bag .wrap{grid-template-columns:1fr;gap:28px}
-  .empowerment-brunch-grid4{grid-template-columns:repeat(2,1fr)}
+  .empowerment-brunch-hangwrap{order:-1;min-height:260px}
+  .empowerment-brunch-grid4,.empowerment-brunch-offer{grid-template-columns:repeat(2,1fr)}
   .foot .grid{grid-template-columns:1fr 1fr}
   .bag-levels{grid-template-columns:1fr}
   .contact-grid{grid-template-columns:1fr}
@@ -824,7 +832,7 @@ html.anim .reveal.in{opacity:1;transform:none}
   .podcast-grid4{grid-template-columns:1fr}
   .her-retreats-trio,.her-retreats-grid4,.her-retreats-offer{grid-template-columns:1fr}
   .exchange-house-grid4{grid-template-columns:1fr}
-  .empowerment-brunch-grid4{grid-template-columns:1fr}
+  .empowerment-brunch-grid4,.empowerment-brunch-offer{grid-template-columns:1fr}
   .stat{flex-direction:column;align-items:flex-start}
   .hero .cta,.subhero .cta,.curriculum-hero .cta{flex-direction:column;align-items:flex-start}
   .btn{width:100%;justify-content:center}
