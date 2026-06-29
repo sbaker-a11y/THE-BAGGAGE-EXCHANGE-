@@ -119,12 +119,33 @@ h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.08;color:var(-
 .copy-card h3{font-size:22px;margin-bottom:10px}
 .copy-card p{font-size:14.5px;color:#4a3a30}
 
+/* Home system section */
+.sys{background:var(--cream-surface);color:var(--espresso);position:relative;overflow:hidden}
+.sys::before{content:"";position:absolute;inset:0;background:var(--sheen)}
+.sys::after{content:"";position:absolute;width:480px;height:480px;right:-150px;bottom:-200px;background:radial-gradient(circle,rgba(217,169,60,.16),transparent 70%)}
+.sys .wrap{position:relative}
+.sys .sec-head h2{color:var(--plum)}
+.sys .sec-head p{color:#4a3a30}
+.sys .sec-head p em{font-style:italic;color:var(--plum);font-weight:600}
+.sys-poweredby{text-align:center;font-family:var(--mono);font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:#A9781F;font-weight:700;margin:0 0 26px}
+.sys-flow{position:relative;max-width:720px;margin:0 auto}
+.sys-flow::before{content:"";position:absolute;left:27px;top:40px;bottom:40px;width:2px;background:linear-gradient(180deg,#B8881F,#6F9072,#C5746E,#A8623A);opacity:.7}
+.sys-step{display:flex;gap:24px;align-items:flex-start;position:relative;padding:16px 0}
+.sys-node{flex:none;width:56px;height:56px;border-radius:50%;background:var(--cream-hi);border:2px solid var(--c);color:var(--c);font-family:var(--mono);font-weight:700;font-size:16px;display:flex;align-items:center;justify-content:center;z-index:1;box-shadow:var(--shadow-soft)}
+.sys-body{padding-top:7px}
+.sys-name{font-family:var(--mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--c);font-weight:700}
+.sys-body h3{color:var(--plum);font-size:22px;margin:5px 0 7px}
+.sys-body p{color:#54453a;font-size:15.5px;max-width:34em}
+.sys-foot{text-align:center;margin-top:40px}
+.sys-foot p{font-family:var(--display);font-style:italic;font-size:21px;color:var(--plum);margin-bottom:20px}
+
 /* Journey / stages */
 .journey{background:var(--cream-surface)}
 .sec-head{max-width:640px;margin-bottom:54px}
 .sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
 .sec-head h2{font-size:clamp(28px,3.6vw,42px);margin:14px 0 16px}
 .sec-head p{font-size:17px;color:#4a3a30}
+.sec-head .flourish{font-family:var(--display);font-style:italic;font-size:22px;color:var(--plum);margin-top:14px}
 .stages{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
 .stage{position:relative;background:#fff;border-radius:16px;padding:28px 22px 26px;box-shadow:var(--shadow-soft),inset 0 1px 0 #fff;border-top:5px solid var(--tone);overflow:hidden}
 .stage .lt{font-family:var(--display);font-size:46px;font-weight:800;color:var(--tone);line-height:1;opacity:.9}
@@ -639,9 +660,11 @@ html.anim .about-invite .reveal{opacity:1;transform:none}
 .foot li{margin-bottom:9px}
 .foot a{font-size:14px;color:rgba(251,245,236,.78)}
 .foot a:hover{color:var(--gold)}
+.foot .lbl{display:block;font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;color:rgba(251,245,236,.5);margin-top:2px;line-height:1.3}
 .foot .legal-block{border-top:1px solid rgba(217,169,60,.25);padding-top:22px;font-size:12px;color:rgba(251,245,236,.55);display:flex;flex-direction:column;gap:10px}
 .foot .legal-block p{line-height:1.6}
 .foot .legal-block .tm-line{color:rgba(251,245,236,.7);font-weight:600}
+.foot .legal-block .mark{font-family:var(--display);color:var(--gold);font-size:15px;letter-spacing:.04em}
 
 /* Reveal motion — visible by default; only hidden once JS arms the animation,
    so content always renders even without JS or before scroll. */
