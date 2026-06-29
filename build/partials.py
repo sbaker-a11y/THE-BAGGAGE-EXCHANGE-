@@ -149,7 +149,7 @@ def footer(ap):
 <div class="legal-block">
 <p class="tm-line">THE BAGGAGE EXCHANGE \u2122 &mdash; {TM_LINE}</p>
 <p>{IP_NOTE}</p>
-<p>&copy; 2026 The Baggage Exchange LLC. Trade what weighs you down for what lifts you up.</p>
+<p>&copy; 2025 The Baggage Exchange LLC. Trade what weighs you down for what lifts you up.</p>
 </div>
 </div></footer>
 <script src="{ap}assets/site.js"></script>
