@@ -752,6 +752,7 @@ html.anim .workshops-cta-sec .reveal{opacity:1;transform:none}
 .id-top .lab{font-family:var(--mono);font-size:10px;letter-spacing:.22em;color:var(--plum);font-weight:700}
 .id-top .seal{font-family:var(--mono);font-size:9px;letter-spacing:.14em;color:#7a5a18;border:1px solid var(--gold);border-radius:20px;padding:3px 9px}
 .id-photo{aspect-ratio:4/5;border-radius:10px;background:radial-gradient(120% 120% at 50% 0%,#5A2240,#3A1224);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.id-photo img{width:100%;height:100%;object-fit:cover;object-position:center center;display:block}
 .id-photo .mono{font-family:var(--display);font-size:88px;font-weight:800;color:rgba(217,169,60,.85)}
 .id-photo .note{position:absolute;bottom:10px;font-family:var(--mono);font-size:9px;letter-spacing:.12em;color:rgba(251,245,236,.45)}
 .id-meta{padding:16px 10px 8px;text-align:center}
