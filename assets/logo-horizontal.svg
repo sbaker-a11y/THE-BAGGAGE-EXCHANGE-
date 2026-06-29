@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 190" width="620" height="190"><g transform="translate(4.7,37) scale(0.85)">
+   <rect x="18" y="28" width="118" height="90" rx="11.7" fill="#3B1F2B"/>
+   <path d="M60.48,28 L60.48,16.7 Q60.48,12.7 66.47999999999999,12.7 L87.52000000000001,12.7 Q93.52000000000001,12.7 93.52000000000001,16.7 L93.52000000000001,28" fill="none" stroke="#C99A4A" stroke-width="5.31" stroke-linejoin="round"/>
+   <line x1="29.8" y1="55.0" x2="124.2" y2="55.0" stroke="#C99A4A" stroke-width="2.95"/>
+   <rect x="51.0" y="49.6" width="7.1" height="10.8" rx="2" fill="#C99A4A"/>
+   <rect x="95.9" y="49.6" width="7.1" height="10.8" rx="2" fill="#C99A4A"/>
+   <rect x="116" y="74" width="80" height="62" rx="8.1" fill="#C99A4A"/>
+   <path d="M144.8,74 L144.8,67.46000000000001 Q144.8,63.46 150.8,63.46 L161.2,63.46 Q167.2,63.46 167.2,67.46000000000001 L167.2,74" fill="none" stroke="#3B1F2B" stroke-width="3.60" stroke-linejoin="round"/>
+   <line x1="124.0" y1="92.6" x2="188.0" y2="92.6" stroke="#3B1F2B" stroke-width="2.00"/>
+   <rect x="138.4" y="88.9" width="4.8" height="7.4" rx="2" fill="#3B1F2B"/>
+   <rect x="168.8" y="88.9" width="4.8" height="7.4" rx="2" fill="#3B1F2B"/></g>
+  <text x="200" y="72" text-anchor="start" font-family="Georgia, 'Liberation Serif', 'Times New Roman', serif" font-size="18" letter-spacing="8.1" fill="#C99A4A">THE</text>
+  <text x="200" y="118" text-anchor="start" font-family="Georgia, 'Liberation Serif', 'Times New Roman', serif" font-size="44" letter-spacing="2" fill="#3B1F2B">BAGGAGE</text>
+  <text x="200" y="164" text-anchor="start" font-family="Georgia, 'Liberation Serif', 'Times New Roman', serif" font-size="44" letter-spacing="2" fill="#3B1F2B">EXCHANGE</text>
+</svg>
