@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 680" width="1000" height="680"><defs>
+<linearGradient id="gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F0D27A"/><stop offset="0.5" stop-color="#D4A53C"/><stop offset="1" stop-color="#A9781F"/></linearGradient>
+<linearGradient id="plum" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5A2240"/><stop offset="0.55" stop-color="#4D1A33"/><stop offset="1" stop-color="#3A1224"/></linearGradient>
+<linearGradient id="cream" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFDF8"/><stop offset="0.5" stop-color="#FBF5EC"/><stop offset="1" stop-color="#F2E8D7"/></linearGradient>
+<linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.14"/><stop offset="0.4" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+</defs>
+<rect width="1000" height="680" rx="10" fill="#E9DEC9"/>
+<rect x="24" y="24" width="464" height="632" rx="6" fill="url(#cream)"/>
+<rect x="512" y="24" width="464" height="632" rx="6" fill="url(#cream)"/>
+<rect x="497" y="24" width="6" height="632" fill="#000000" opacity="0.06"/>
+<text x="256" y="74" text-anchor="middle" font-family="Playfair Display" font-size="13" font-weight="700" letter-spacing="4" fill="#D9A93C">THE BAGGAGE EXCHANGE</text>
+<text x="256" y="106" text-anchor="middle" font-family="Playfair Display" font-size="26" font-weight="700" fill="#4D1A33">Traveler</text>
+<g transform="translate(198,132)">
+   <path d="M 30.36 32 q 0 -15.4 15.64 -15.4 q 15.64 0 15.64 15.4" fill="none" stroke="#4D1A33" stroke-width="3.85" stroke-linecap="round"/>
+   <rect x="0" y="30" width="92" height="70" rx="9.8" fill="url(#gold)"/>
+   <line x1="3.68" y1="60.8" x2="88.32" y2="60.8" stroke="#4D1A33" stroke-width="4.9"/>
+   <rect x="27.599999999999998" y="55.9" width="11.04" height="9.8" rx="2" fill="#4D1A33"/>
+   <rect x="53.36" y="55.9" width="11.04" height="9.8" rx="2" fill="#4D1A33"/>
+   <path d="M 93.14 66 q 0 -10.12 9.860000000000001 -10.12 q 9.860000000000001 0 9.860000000000001 10.12" fill="none" stroke="url(#gold)" stroke-width="2.53" stroke-linecap="round"/>
+   <rect x="74" y="64" width="58" height="46" rx="6.44" fill="#4D1A33"/>
+   <line x1="76.32" y1="84.24" x2="129.68" y2="84.24" stroke="url(#gold)" stroke-width="3.22"/>
+   <rect x="91.4" y="81.02" width="6.96" height="6.44" rx="2" fill="url(#gold)"/>
+   <rect x="107.64" y="81.02" width="6.96" height="6.44" rx="2" fill="url(#gold)"/></g>
+<text x="58" y="260" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="2" fill="#D9A93C">NAME</text><line x1="58" y1="274" x2="454" y2="274" stroke="#E3C6A0" stroke-width="1.4"/><text x="58" y="312" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="2" fill="#D9A93C">MEMBER SINCE</text><line x1="58" y1="326" x2="454" y2="326" stroke="#E3C6A0" stroke-width="1.4"/><text x="58" y="364" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="2" fill="#D9A93C">START DATE</text><line x1="58" y1="378" x2="454" y2="378" stroke="#E3C6A0" stroke-width="1.4"/>
+<text x="256" y="630" text-anchor="middle" font-family="Playfair Display" font-size="12" font-weight="400" font-style="italic" fill="#4D1A33">Trade what weighs you down for what lifts you up.</text>
+<text x="744" y="74" text-anchor="middle" font-family="Playfair Display" font-size="13" font-weight="700" letter-spacing="5" fill="#D9A93C">STAMPS</text>
+<text x="744" y="102" text-anchor="middle" font-family="Playfair Display" font-size="15" font-weight="400" font-style="italic" fill="#4D1A33">One for every exchange.</text>
+<g transform="rotate(-4 589.3333333333334 294.5)" opacity="1">
+   <circle cx="589.3333333333334" cy="294.5" r="44" fill="none" stroke="#C5746E" stroke-width="2.4"/>
+   <circle cx="589.3333333333334" cy="294.5" r="39" fill="none" stroke="#C5746E" stroke-width="1"/>
+   <circle cx="589.3333333333334" cy="259.5" r="1.7" fill="#C5746E"/>
+   <text x="589.3333333333334" y="293.5" text-anchor="middle" font-family="Playfair Display" font-size="11" font-weight="700" letter-spacing="1" fill="#C5746E">BRUNCH</text>
+   <text x="589.3333333333334" y="308.5" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="400" letter-spacing="1" fill="#C5746E">06 14 26</text></g><g transform="rotate(3 744 294.5)" opacity="1">
+   <circle cx="744" cy="294.5" r="44" fill="none" stroke="#6F9072" stroke-width="2.4"/>
+   <circle cx="744" cy="294.5" r="39" fill="none" stroke="#6F9072" stroke-width="1"/>
+   <circle cx="744" cy="259.5" r="1.7" fill="#6F9072"/>
+   <text x="744" y="293.5" text-anchor="middle" font-family="Playfair Display" font-size="11" font-weight="700" letter-spacing="1" fill="#6F9072">WORKSHOPS</text>
+   <text x="744" y="308.5" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="400" letter-spacing="1" fill="#6F9072">06 21 26</text></g><g transform="rotate(-2 898.6666666666667 294.5)" opacity="1">
+   <circle cx="898.6666666666667" cy="294.5" r="44" fill="none" stroke="#4D1A33" stroke-width="2.4"/>
+   <circle cx="898.6666666666667" cy="294.5" r="39" fill="none" stroke="#4D1A33" stroke-width="1"/>
+   <circle cx="898.6666666666667" cy="259.5" r="1.7" fill="#4D1A33"/>
+   <text x="898.6666666666667" y="293.5" text-anchor="middle" font-family="Playfair Display" font-size="11" font-weight="700" letter-spacing="1" fill="#4D1A33">HER</text>
+   <text x="898.6666666666667" y="308.5" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="400" letter-spacing="1" fill="#4D1A33">06 28 26</text></g><g transform="rotate(4 589.3333333333334 535.5)" opacity="1">
+   <circle cx="589.3333333333334" cy="535.5" r="44" fill="none" stroke="#B8881F" stroke-width="2.4"/>
+   <circle cx="589.3333333333334" cy="535.5" r="39" fill="none" stroke="#B8881F" stroke-width="1"/>
+   <circle cx="589.3333333333334" cy="500.5" r="1.7" fill="#B8881F"/>
+   <text x="589.3333333333334" y="534.5" text-anchor="middle" font-family="Playfair Display" font-size="11" font-weight="700" letter-spacing="1" fill="#B8881F">PODCAST</text>
+   <text x="589.3333333333334" y="549.5" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="8" font-weight="400" letter-spacing="1" fill="#B8881F">07 01 26</text></g><g transform="rotate(-3 744 535.5)" opacity="0.4">
+   <circle cx="744" cy="535.5" r="44" fill="none" stroke="#21160F" stroke-width="2.4"/>
+   <circle cx="744" cy="535.5" r="39" fill="none" stroke="#21160F" stroke-width="1"/>
+   <circle cx="744" cy="500.5" r="1.7" fill="#21160F"/>
+   <text x="744" y="534.5" text-anchor="middle" font-family="Playfair Display" font-size="11" font-weight="700" letter-spacing="1" fill="#21160F">SHOP</text>
+   <text x="744" y="549.5" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="7" font-weight="700" letter-spacing="2" fill="#21160F">TO COME</text></g><g transform="rotate(2 898.6666666666667 535.5)" opacity="0.4">
+   <circle cx="898.6666666666667" cy="535.5" r="44" fill="none" stroke="#A8623A" stroke-width="2.4"/>
+   <circle cx="898.6666666666667" cy="535.5" r="39" fill="none" stroke="#A8623A" stroke-width="1"/>
+   <circle cx="898.6666666666667" cy="500.5" r="1.7" fill="#A8623A"/>
+   <text x="898.6666666666667" y="534.5" text-anchor="middle" font-family="Playfair Display" font-size="11" font-weight="700" letter-spacing="1" fill="#A8623A">HOUSE</text>
+   <text x="898.6666666666667" y="549.5" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="7" font-weight="700" letter-spacing="2" fill="#A8623A">TO COME</text></g>
+</svg>
