@@ -344,6 +344,45 @@ html.anim .her-retreats-bag .reveal,
 html.anim .her-retreats-rooted .reveal,
 html.anim .her-retreats-cta-sec .reveal{opacity:1;transform:none}
 
+/* Approved H.O.P.E. Curriculum page layout */
+.curriculum-crumb{background:var(--plum-deep);padding:12px 0;font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:rgba(251,245,236,.6)}
+.curriculum-crumb a:hover{color:var(--gold)}
+.curriculum-crumb .sep{margin:0 8px;color:rgba(217,169,60,.6)}
+.curriculum-hero{position:relative;overflow:hidden;background:linear-gradient(160deg,#FBF1DD 0%,#EBD9BF 60%,#E3C6A0 120%);color:var(--espresso)}
+.curriculum-hero::before{content:"";position:absolute;inset:0;background:var(--sheen);pointer-events:none}
+.curriculum-hero::after{content:"";position:absolute;width:520px;height:520px;right:-150px;top:-160px;background:radial-gradient(circle,rgba(217,169,60,.18),transparent 70%);pointer-events:none}
+.curriculum-hero .wrap{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center;padding-top:80px;padding-bottom:88px}
+.curriculum-lane-code{font-family:var(--mono);font-size:12px;letter-spacing:.2em;font-weight:700;color:#8a6a3e}
+.curriculum-hero h1{color:var(--plum);font-size:clamp(42px,6vw,74px);margin:14px 0 10px;line-height:1}
+.curriculum-tagline{font-family:var(--display);font-style:italic;font-size:26px;color:#A9781F;margin-bottom:22px}
+.curriculum-hero p.desc{font-size:18px;max-width:34em;margin-bottom:26px;color:#4a3a30}
+.curriculum-hero .cta{display:flex;gap:14px;flex-wrap:wrap}
+.curriculum-hangwrap{display:flex;justify-content:center;align-items:flex-start;min-height:340px}
+.curriculum-swingtag{transform-origin:50% 4px;animation:curriculumSwing 4.4s ease-in-out infinite;filter:drop-shadow(0 22px 30px rgba(0,0,0,.4))}
+@keyframes curriculumSwing{0%,100%{transform:rotate(-3.2deg)}50%{transform:rotate(3.2deg)}}
+.curriculum-what{background:var(--cream-surface)}
+.curriculum-feat{max-width:820px;margin:0 auto;display:flex;flex-direction:column;gap:14px}
+.curriculum-feat .row{display:flex;gap:16px;align-items:flex-start;background:#fff;border-radius:13px;padding:20px 22px;box-shadow:var(--shadow-soft)}
+.curriculum-feat .row .ic{flex:none;width:42px;height:42px;border-radius:11px;background:var(--c);display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--display);font-weight:700;font-size:18px}
+.curriculum-feat .row h3{font-size:18px;margin-bottom:3px}
+.curriculum-feat .row p{font-size:14.5px;color:#54453a}
+.curriculum-editions{background:var(--cream-surface)}
+.curriculum-twocol{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:920px;margin:0 auto}
+.curriculum-ecard{background:var(--cream-hi);border-radius:16px;padding:30px;box-shadow:var(--shadow-soft);border-left:5px solid var(--c)}
+.curriculum-ecard .k{font-family:var(--mono);font-size:11px;letter-spacing:.16em;color:var(--c);font-weight:700;margin-bottom:8px}
+.curriculum-ecard h3{font-size:22px;margin-bottom:10px}
+.curriculum-ecard p{font-size:15px;color:#54453a}
+.curriculum-cta-sec{background:var(--plum-surface);color:var(--cream);text-align:center;position:relative;overflow:hidden}
+.curriculum-cta-sec::before{content:"";position:absolute;inset:0;background:var(--sheen)}
+.curriculum-cta-sec .wrap{position:relative}
+.curriculum-cta-sec h2{color:var(--cream);font-size:clamp(30px,4vw,46px);margin-bottom:14px}
+.curriculum-cta-sec p{color:rgba(251,245,236,.85);font-size:17px;max-width:34em;margin:0 auto 28px}
+.curriculum-cta-sec .cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.curriculum-cta-sec .note{margin-top:20px;font-family:var(--mono);font-size:12px;letter-spacing:.12em;color:var(--gold)}
+html.anim .curriculum-what .reveal,
+html.anim .curriculum-editions .reveal,
+html.anim .curriculum-cta-sec .reveal{opacity:1;transform:none}
+
 /* Approved Exchange House page layout */
 .exchange-house-page{--exchange-tag-bg:linear-gradient(180deg,#CE817B,#C5746E);--exchange-tag-ink:#FBF5EC;--exchange-tag-stitch:#f0d2cf;--exchange-lane:var(--rose);--exchange-lane-ink:#9A4F49}
 .exchange-house-crumb{background:var(--plum-deep);padding:12px 0;font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:rgba(251,245,236,.6)}
@@ -764,6 +803,9 @@ html.anim .reveal.in{opacity:1;transform:none}
   .her-retreats-hero .wrap{grid-template-columns:1fr;gap:40px}
   .her-retreats-hangwrap{order:-1;min-height:260px}
   .her-retreats-trio,.her-retreats-grid4,.her-retreats-offer{grid-template-columns:repeat(2,1fr)}
+  .curriculum-hero .wrap{grid-template-columns:1fr;gap:40px}
+  .curriculum-hangwrap{order:-1;min-height:260px}
+  .curriculum-twocol{grid-template-columns:1fr}
   .exchange-house-hero .wrap{grid-template-columns:1fr;gap:40px}
   .exchange-house-bigtag{order:-1}
   .exchange-house-grid4{grid-template-columns:repeat(2,1fr)}
@@ -784,7 +826,7 @@ html.anim .reveal.in{opacity:1;transform:none}
   .exchange-house-grid4{grid-template-columns:1fr}
   .empowerment-brunch-grid4{grid-template-columns:1fr}
   .stat{flex-direction:column;align-items:flex-start}
-  .hero .cta,.subhero .cta{flex-direction:column;align-items:flex-start}
+  .hero .cta,.subhero .cta,.curriculum-hero .cta{flex-direction:column;align-items:flex-start}
   .btn{width:100%;justify-content:center}
   .final .cta .btn{width:100%}
 }
