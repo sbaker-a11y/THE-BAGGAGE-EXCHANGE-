@@ -100,7 +100,7 @@ h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.08;color:var(-
 .crumbs a:hover{color:var(--gold)}
 
 /* Marquee */
-.marquee{background:var(--plum-deep);border-top:1px solid rgba(217,169,60,.3);border-bottom:1px solid rgba(217,169,60,.3);overflow:hidden;padding:13px 0}
+.marquee{background:var(--plum-deep);border-top:1px solid rgba(217,169,60,.3);border-bottom:1px solid rgba(217,169,60,.3);overflow:hidden;padding:13px 0;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 46px,#000 calc(100% - 46px),transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 46px,#000 calc(100% - 46px),transparent 100%)}
 .marquee-track{display:flex;gap:0;white-space:nowrap;width:max-content;animation:scroll 46s linear infinite}
 .marquee:hover .marquee-track{animation-play-state:paused}
 .marquee span{font-family:var(--display);font-style:italic;font-size:17px;color:var(--cream);padding:0 30px;display:inline-flex;align-items:center;gap:60px}
