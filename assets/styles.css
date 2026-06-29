@@ -250,6 +250,68 @@ html.anim .podcast-beats .reveal,
 html.anim .podcast-format .reveal,
 html.anim .podcast-cta-sec .reveal{opacity:1;transform:none}
 
+/* Approved HER Retreats page layout */
+.her-retreats-crumb{background:var(--plum-deep);padding:12px 0;font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:rgba(251,245,236,.6)}
+.her-retreats-crumb a:hover{color:var(--gold)}
+.her-retreats-crumb .sep{margin:0 8px;color:rgba(217,169,60,.6)}
+.her-retreats-hero{background:var(--plum-surface);color:var(--cream);position:relative;overflow:hidden}
+.her-retreats-hero::before{content:"";position:absolute;inset:0;background:var(--sheen)}
+.her-retreats-hero::after{content:"";position:absolute;width:520px;height:520px;right:-150px;top:-160px;background:radial-gradient(circle,rgba(217,169,60,.18),transparent 70%)}
+.her-retreats-hero .wrap{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center;padding-top:80px;padding-bottom:88px}
+.her-retreats-lane-code{font-family:var(--mono);font-size:12px;letter-spacing:.2em;color:var(--gold);font-weight:700}
+.her-retreats-hero h1{color:var(--cream);font-size:clamp(44px,6vw,76px);margin:14px 0 10px;line-height:1}
+.her-retreats-tagline{font-family:var(--display);font-style:italic;font-size:26px;color:var(--gold);margin-bottom:22px}
+.her-retreats-hero p{font-size:18px;color:rgba(251,245,236,.9);max-width:34em;margin-bottom:26px}
+.her-retreats-hero .cta{display:flex;gap:14px;flex-wrap:wrap}
+.her-retreats-bigtag{position:relative;background:var(--plum-surface);border-radius:18px;padding:40px 28px 26px;width:300px;justify-self:center;box-shadow:var(--shadow-press);border:1px solid rgba(217,169,60,.4);transform:rotate(2.5deg)}
+.her-retreats-bigtag::before{content:"";position:absolute;inset:10px;border:1.6px dashed rgba(217,169,60,.5);border-radius:11px}
+.her-retreats-bigtag .grommet{position:absolute;top:16px;left:50%;transform:translateX(-50%);width:22px;height:22px;border-radius:50%;border:4px solid var(--gold);background:rgba(0,0,0,.25)}
+.her-retreats-bigtag .lab{font-family:var(--mono);font-size:10px;letter-spacing:.22em;color:var(--gold);text-align:center;margin-top:6px}
+.her-retreats-bigtag h3{color:var(--cream);text-align:center;font-size:30px;margin:8px 0 6px}
+.her-retreats-bigtag .sub{text-align:center;font-family:var(--display);font-style:italic;color:rgba(251,245,236,.85);margin-bottom:24px}
+.her-retreats-bigtag .bar{display:flex;justify-content:space-between;align-items:flex-end}
+.her-retreats-bigtag .barcode{width:80px;height:32px;background:repeating-linear-gradient(90deg,#FBF5EC 0,#FBF5EC 2px,transparent 2px,transparent 4px);opacity:.85}
+.her-retreats-bigtag .code{font-family:var(--mono);font-size:13px;font-weight:700;letter-spacing:.1em;color:var(--gold)}
+.her-retreats-meaning{background:var(--cream-surface)}
+.her-retreats-trio{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.her-retreats-tcard{background:#fff;border-radius:16px;padding:32px 26px;text-align:center;box-shadow:var(--shadow-soft);border-top:5px solid var(--tone)}
+.her-retreats-tcard .lt{font-family:var(--display);font-size:54px;font-weight:800;color:var(--tone);line-height:1}
+.her-retreats-tcard h3{font-size:23px;margin:6px 0 10px}
+.her-retreats-tcard p{font-size:15px;color:#54453a}
+.her-retreats-tcard:nth-child(1){--tone:var(--sage)}
+.her-retreats-tcard:nth-child(2){--tone:var(--gold)}
+.her-retreats-tcard:nth-child(3){--tone:var(--rose)}
+.her-retreats-expect{background:var(--sand);position:relative}
+.her-retreats-grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.her-retreats-dcard{background:var(--cream-surface);border-radius:14px;padding:26px 22px;box-shadow:var(--shadow-soft)}
+.her-retreats-dcard .ic{font-family:var(--mono);font-size:11px;letter-spacing:.16em;color:#8a6a3e;font-weight:700;margin-bottom:10px}
+.her-retreats-dcard h3{font-size:19px;margin-bottom:8px}
+.her-retreats-dcard p{font-size:14.5px;color:#5a4123}
+.her-retreats-bag{background:var(--espresso);color:var(--cream);position:relative;overflow:hidden}
+.her-retreats-bag::after{content:"";position:absolute;width:480px;height:480px;left:-160px;bottom:-200px;background:radial-gradient(circle,rgba(217,169,60,.16),transparent 70%)}
+.her-retreats-bag .wrap{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.her-retreats-bag h2{color:var(--cream);font-size:clamp(28px,3.6vw,40px);margin:14px 0 18px}
+.her-retreats-bag p{color:rgba(251,245,236,.86);font-size:17px;margin-bottom:18px}
+.her-retreats-bag ul{list-style:none;border-left:2px dashed rgba(217,169,60,.5);padding-left:24px;display:flex;flex-direction:column;gap:14px}
+.her-retreats-bag li{font-size:15.5px;color:rgba(251,245,236,.9)}
+.her-retreats-bag li b{color:var(--gold);font-family:var(--display)}
+.her-retreats-rooted{background:var(--cream);text-align:center}
+.her-retreats-rooted .wrap{max-width:760px}
+.her-retreats-rooted .badge{display:inline-block;font-family:var(--mono);font-size:11px;letter-spacing:.16em;color:#fff;background:var(--plum);padding:7px 16px;border-radius:30px;margin-bottom:18px}
+.her-retreats-rooted p{font-size:18px;color:#3f3128}
+.her-retreats-cta-sec{background:var(--plum-surface);color:var(--cream);text-align:center;position:relative;overflow:hidden}
+.her-retreats-cta-sec::before{content:"";position:absolute;inset:0;background:var(--sheen)}
+.her-retreats-cta-sec .wrap{position:relative}
+.her-retreats-cta-sec h2{color:var(--cream);font-size:clamp(30px,4vw,46px);margin-bottom:14px}
+.her-retreats-cta-sec p{color:rgba(251,245,236,.85);font-size:17px;max-width:34em;margin:0 auto 28px}
+.her-retreats-cta-sec .cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.her-retreats-cta-sec .note{margin-top:20px;font-family:var(--mono);font-size:12px;letter-spacing:.12em;color:var(--gold)}
+html.anim .her-retreats-meaning .reveal,
+html.anim .her-retreats-expect .reveal,
+html.anim .her-retreats-bag .reveal,
+html.anim .her-retreats-rooted .reveal,
+html.anim .her-retreats-cta-sec .reveal{opacity:1;transform:none}
+
 /* Founder teaser */
 .founder{background:var(--cream)}
 .founder .wrap{max-width:820px;text-align:center}
@@ -398,6 +460,10 @@ html.anim .reveal.in{opacity:1;transform:none}
   .podcast-hero .podcast-cover{max-width:260px}
   .podcast-format .wrap{grid-template-columns:1fr;gap:28px}
   .podcast-grid4{grid-template-columns:repeat(2,1fr)}
+  .her-retreats-hero .wrap{grid-template-columns:1fr;gap:40px}
+  .her-retreats-bigtag{order:-1}
+  .her-retreats-bag .wrap{grid-template-columns:1fr;gap:28px}
+  .her-retreats-trio,.her-retreats-grid4{grid-template-columns:repeat(2,1fr)}
   .foot .grid{grid-template-columns:1fr 1fr}
   .bag-levels{grid-template-columns:1fr}
   .contact-grid{grid-template-columns:1fr}
@@ -407,6 +473,7 @@ html.anim .reveal.in{opacity:1;transform:none}
   .podcast-section{padding:62px 0}
   .stages,.tags,.copy-grid,.bag .holds,.foot .grid,.beats,.cards-3,.cards-2{grid-template-columns:1fr}
   .podcast-grid4{grid-template-columns:1fr}
+  .her-retreats-trio,.her-retreats-grid4{grid-template-columns:1fr}
   .stat{flex-direction:column;align-items:flex-start}
   .hero .cta,.subhero .cta{flex-direction:column;align-items:flex-start}
   .btn{width:100%;justify-content:center}
