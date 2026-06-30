@@ -37,7 +37,7 @@ NAV = [
     ("Experiences", None, [
         ("Experiences Hub", "/experiences/"),
         ("Empowerment Brunch", "/empowerment-brunch/"),
-        ("Carry On Workshops", "/carry-on-workshops/"),
+        ("Carry On Workshop", "/carry-on-workshops/"),
         ("HER Retreats", "/her-retreats/"),
         ("The Podcast", "/podcast/"),
         ("The H.O.P.E. Shop", "/hope-shop/"),
@@ -170,8 +170,8 @@ LANES = [
     ("brunch", "Experience Lane", "Empowerment Brunch", "A seat at the table.",
      "THE Baggage Exchange Empowerment Brunch is the social front door to the brand. A warm, light gathering where good food, honest conversation, and one small exchange help guests set something down and leave a little lighter. No heavy lifting, just permission to put one thing down for a while.",
      "BRN 01", "/empowerment-brunch/", False),
-    ("workshops", "Experience Lane", "Carry On Workshops", "Practice the work.",
-     "Carry On Workshops by THE Baggage Exchange are guided experiences that help participants name what they carry, set down what no longer serves them, and leave with practical tools for moving forward with lighter bags.",
+    ("workshops", "Experience Lane", "Carry On Workshop", "Practice the work.",
+     "The Carry On Workshop by THE Baggage Exchange is a guided experience that helps participants name what they carry, set down what no longer serves them, and leave with practical tools for moving forward with lighter bags.",
      "WRK 02", "/carry-on-workshops/", False),
     ("her", "Experience Lane", "HER Retreats", "A deep dive.",
      "HER Retreats by THE Baggage Exchange are the deep-dive experience for women ready for immersive restoration. You travel for three to four immersive days within the United States or five to seven abroad, walking the full H.O.P.E. journey across a held, trauma-informed space. Guests set the heaviest things down, reframe the whole story, connect their lived experience to a calling, and leave with tools, a plan, and the confidence to step forward. This is where you dive deep into the H.O.P.E. curriculum and move through Healing, Empowerment, and Restoration. You leave with the fullest H.O.P.E. Bag of any experience. At the inaugural launch planned for November 2026, HER Retreats center BIPOC women, with broader retreats to follow.",
@@ -226,7 +226,7 @@ def bag_section():
 </div></div>
 <div class="levels reveal">
 <div class="lvl"><b>Empowerment Brunch</b><p>The lightest bag. A warm welcome, a tag, a short card set, and a small keepsake.</p></div>
-<div class="lvl"><b>Carry On Workshops</b><p>A working bag. Everything in the brunch bag, plus a session workbook and a tool tied to the skill you practiced.</p></div>
+<div class="lvl"><b>Carry On Workshop</b><p>A working bag. Everything in the brunch bag, plus a session workbook and a tool tied to the skill you practiced.</p></div>
 <div class="lvl"><b>HER Retreats</b><p>The fullest bag. A complete journal, the H.O.P.E. Journey workbook, ritual cards, a keepsake, and resources to carry forward.</p></div>
 </div></div></section>""")
 
@@ -239,7 +239,7 @@ def passport_section():
             f'Journey at a glance. Watch the pages fill as you move through the lanes, until a single passport '
             f'tells the whole story of where you have been. It is a light, gamified keepsake, not an account.</p>'
             f'<div class="ink-row"><span class="ink" style="background:#C5746E">Brunch</span>'
-            f'<span class="ink" style="background:#6F9072">Workshops</span>'
+            f'<span class="ink" style="background:#6F9072">Workshop</span>'
             f'<span class="ink" style="background:#4D1A33">HER</span>'
             f'<span class="ink" style="background:#B8881F">Podcast</span>'
             f'<span class="ink" style="background:#21160F">Shop</span>'

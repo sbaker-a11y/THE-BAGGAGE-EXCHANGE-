@@ -307,7 +307,7 @@ def build_experiences():
                    '<div class="related"><a href="/hope-shop/" style="color:#FBF5EC;border-color:rgba(217,169,60,.5)">Visit the H.O.P.E. Shop</a></div></div>'
                    '<div class="levels reveal">'
                    '<div class="lvl"><b>Empowerment Brunch</b><p>The lightest bag.</p></div>'
-                   '<div class="lvl"><b>Carry On Workshops</b><p>A working bag.</p></div>'
+                   '<div class="lvl"><b>Carry On Workshop</b><p>A working bag.</p></div>'
                    '<div class="lvl"><b>HER Retreats</b><p>The fullest bag.</p></div></div></div></section>')
     body = hero + P.lanes_section() + P.passport_section() + distinction + final_cta()
     write_page("experiences", page("experiences", "Experiences | THE Baggage Exchange",
@@ -367,13 +367,13 @@ def build_workshops():
                 '<div class="related" style="margin-top:24px"><a href="/hope-curriculum/">The H.O.P.E. Curriculum</a></div>'
                 '</div></section>')
     detail_page("carry-on-workshops", "/carry-on-workshops/", "Experiences",
-                "Carry On Workshops.", "Practice the work.",
-                "Carry On Workshops by THE Baggage Exchange are guided experiences that help participants name what they carry, set down what no longer serves them, and leave with practical tools for moving forward with lighter bags.",
+                "Carry On Workshop.", "Practice the work.",
+                "The Carry On Workshop by THE Baggage Exchange is a guided experience that helps participants name what they carry, set down what no longer serves them, and leave with practical tools for moving forward with lighter bags.",
                 sections,
                 "Workshop attendees take home a working H.O.P.E. Bag\u2122: everything in the brunch bag, plus a session workbook and a tool tied to the skill you practiced.",
-                "Book or inquire", "Carry On Workshops | THE Baggage Exchange",
-                "Carry On Workshops help you name what you carry and leave with practical tools.",
-                "Carry On Workshops")
+                "Book or inquire", "Carry On Workshop | THE Baggage Exchange",
+                "Carry On Workshop help you name what you carry and leave with practical tools.",
+                "Carry On Workshop")
 
 
 def build_her():

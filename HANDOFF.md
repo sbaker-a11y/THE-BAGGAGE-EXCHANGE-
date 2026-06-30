@@ -24,7 +24,7 @@
 5. `/hope-beats/` — The Four H.O.P.E. Beats (The Method)
 6. `/experiences/` — Experiences hub
 7. `/empowerment-brunch/` — Empowerment Brunch
-8. `/carry-on-workshops/` — Carry On Workshops
+8. `/carry-on-workshops/` — Carry On Workshop
 9. `/her-retreats/` — HER Retreats
 10. `/podcast/` — The Podcast
 11. `/hope-shop/` — The H.O.P.E. Shop  (path is `/hope-shop` exactly)
@@ -34,7 +34,7 @@
 15. `/certification-licensing/` — Certification or Licensing (Bring Us In)
 16. `/contact/` — Contact
 
-**Navigation model:** Home · About · The Method ▾ (Journey / Curriculum / Four Beats) · Experiences ▾ (Hub / Empowerment Brunch / Carry On Workshops / HER Retreats / Podcast / H.O.P.E. Shop / Exchange House) · Bring Us In ▾ (Corporate / Community / Certification or Licensing) · Contact · gold **Begin Your Exchange** button. Dropdowns open on hover and click; mobile uses a drawer toggled by the menu button.
+**Navigation model:** Home · About · The Method ▾ (Journey / Curriculum / Four Beats) · Experiences ▾ (Hub / Empowerment Brunch / Carry On Workshop / HER Retreats / Podcast / H.O.P.E. Shop / Exchange House) · Bring Us In ▾ (Corporate / Community / Certification or Licensing) · Contact · gold **Begin Your Exchange** button. Dropdowns open on hover and click; mobile uses a drawer toggled by the menu button.
 
 ---
 

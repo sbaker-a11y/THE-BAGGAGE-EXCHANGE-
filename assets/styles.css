@@ -511,7 +511,7 @@ html.anim .hope-shop-cta-sec .reveal{opacity:1;transform:none}
 @media(max-width:560px){.hope-shop-prodgrid{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){.hope-shop-swingtag{animation:none}}
 
-/* Approved Carry On Workshops page layout */
+/* Approved Carry On Workshop page layout */
 .workshops-crumb{background:var(--plum-deep);padding:12px 0;font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:rgba(251,245,236,.6)}
 .workshops-crumb a:hover{color:var(--gold)}
 .workshops-crumb .sep{margin:0 8px;color:rgba(217,169,60,.6)}
