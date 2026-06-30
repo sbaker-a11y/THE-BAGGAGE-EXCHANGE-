@@ -1037,6 +1037,26 @@ html.anim .reveal.in{opacity:1;transform:none}
   .bag-levels{grid-template-columns:1fr}
   .contact-grid{grid-template-columns:1fr}
 }
+@media(min-width:621px) and (max-width:920px){
+  .podcast-swingtag,
+  .her-retreats-swingtag,
+  .curriculum-swingtag,
+  .exchange-house-swingtag,
+  .empowerment-brunch-swingtag,
+  .hope-shop-swingtag,
+  .workshops-swingtag,
+  .beats-page .swingtag,
+  .journey-page .journey-swingtag,
+  .hope-bag-page .hope-bag-swingtag,
+  .experiences-page .experiences-swingtag,
+  .community-page .swingcase,
+  .corporate-page .corporate-swingcase,
+  .certification-page .certification-swingcase{
+    width:min(62vw,430px);
+    max-width:430px;
+    height:auto;
+  }
+}
 @media(max-width:560px){
   .section{padding:64px 0}
   .podcast-section{padding:62px 0}
