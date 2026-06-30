@@ -45,7 +45,7 @@ def build_home():
             f'<a class="btn btn-ghost" href="/hope-journey/">Explore the H.O.P.E. Journey</a></div>'
             f'<p class="fineprint">A warm transformation community founded by a survivor and doctorally '
             f'prepared nurse practitioner. Trauma informed at its foundation, culturally responsive '
-            f'throughout. At launch, HER Retreats center BIPOC women, with wider lanes open to all.</p></div>'
+            f'throughout. At launch, HER Retreats center Black women, with wider lanes open to all.</p></div>'
             f'<div class="hero-art">{P.HERO_PASSPORT_SVG}<span class="tagline-chip">CHECK YOUR BAGGAGE</span></div>'
             f'</div></section>')
 
@@ -140,8 +140,8 @@ def build_about():
             '<section class="section warm"><div class="wrap prose reveal">'
             '<p class="eyebrow">The roots</p>'
             '<h2 style="font-size:clamp(24px,3vw,34px);margin:12px 0 16px">Where the work comes from</h2>'
-            '<p>The work is rooted in the Carolinas and in BIPOC women, and it welcomes women everywhere to set '
-            'something heavy down and carry something lighter forward. At launch, HER Retreats center BIPOC women, '
+            '<p>The work is rooted in the Carolinas and in Black women, and it welcomes women everywhere to set '
+            'something heavy down and carry something lighter forward. At launch, HER Retreats center Black women, '
             'with wider lanes open to all. The H.O.P.E. Curriculum, the structured method behind every experience, '
             'grew out of that lived foundation and now guides participants through Healing, Opportunity, Purpose, '
             'and Empowerment.</p></div></section>'
@@ -390,11 +390,11 @@ def build_her():
                 '<section class="section warm"><div class="wrap prose reveal">'
                 '<p class="eyebrow">Inaugural launch</p>'
                 '<h2 style="font-size:clamp(22px,2.8vw,32px);margin:12px 0 14px">Planned for November 2026</h2>'
-                '<p>At the inaugural launch planned for November 2026, HER Retreats center BIPOC women, with broader '
+                '<p>At the inaugural launch planned for November 2026, HER Retreats center Black women, with broader '
                 'retreats to follow.</p></div></section>')
     detail_page("her-retreats", "/her-retreats/", "Experiences",
                 "HER Retreats.", "A deep dive.",
-                "HER Retreats by THE Baggage Exchange are the deep-dive experience for women ready for immersive restoration. You travel for three to four immersive days within the United States or five to seven abroad, walking the full H.O.P.E. journey across a held, trauma-informed space. Guests set the heaviest things down, reframe the whole story, connect their lived experience to a calling, and leave with tools, a plan, and the confidence to step forward. This is where you dive deep into the H.O.P.E. curriculum and move through Healing, Empowerment, and Restoration. You leave with the fullest H.O.P.E. Bag of any experience. At the inaugural launch planned for November 2026, HER Retreats center BIPOC women, with broader retreats to follow.",
+                "HER Retreats by THE Baggage Exchange are the deep-dive experience for women ready for immersive restoration. You travel for three to four immersive days within the United States or five to seven abroad, walking the full H.O.P.E. journey across a held, trauma-informed space. Guests set the heaviest things down, reframe the whole story, connect their lived experience to a calling, and leave with tools, a plan, and the confidence to step forward. This is where you dive deep into the H.O.P.E. curriculum and move through Healing, Empowerment, and Restoration. You leave with the fullest H.O.P.E. Bag of any experience. At the inaugural launch planned for November 2026, HER Retreats center Black women, with broader retreats to follow.",
                 sections,
                 "Retreat guests take home the fullest H.O.P.E. Bag\u2122 of any experience: a complete journal, the H.O.P.E. Journey workbook, ritual cards, a keepsake, and resources to carry forward.",
                 "Join the retreat list", "HER Retreats | THE Baggage Exchange",

@@ -110,7 +110,7 @@ def marquee():
 
 FOOTER_BLURB = ("Where women trade what weighs them down for what lifts them up. A warm community "
                 "walking the H.O.P.E. journey together, through Healing, Opportunity, Purpose, and "
-                "Empowerment. Rooted in the Carolinas and in BIPOC women, it welcomes women everywhere "
+                "Empowerment. Rooted in the Carolinas and in Black women, it welcomes women everywhere "
                 "to set something heavy down and carry something lighter forward.")
 
 TM_LINE = ("THE Baggage Exchange and the H.O.P.E. system are trademarks of The Baggage Exchange LLC.")
@@ -174,7 +174,7 @@ LANES = [
      "The Carry On Workshop by THE Baggage Exchange is a guided experience that helps participants name what they carry, set down what no longer serves them, and leave with practical tools for moving forward with lighter bags.",
      "WRK 02", "/carry-on-workshops/", False),
     ("her", "Experience Lane", "HER Retreats", "A deep dive.",
-     "HER Retreats by THE Baggage Exchange are the deep-dive experience for women ready for immersive restoration. You travel for three to four immersive days within the United States or five to seven abroad, walking the full H.O.P.E. journey across a held, trauma-informed space. Guests set the heaviest things down, reframe the whole story, connect their lived experience to a calling, and leave with tools, a plan, and the confidence to step forward. This is where you dive deep into the H.O.P.E. curriculum and move through Healing, Empowerment, and Restoration. You leave with the fullest H.O.P.E. Bag of any experience. At the inaugural launch planned for November 2026, HER Retreats center BIPOC women, with broader retreats to follow.",
+     "HER Retreats by THE Baggage Exchange are the deep-dive experience for women ready for immersive restoration. You travel for three to four immersive days within the United States or five to seven abroad, walking the full H.O.P.E. journey across a held, trauma-informed space. Guests set the heaviest things down, reframe the whole story, connect their lived experience to a calling, and leave with tools, a plan, and the confidence to step forward. This is where you dive deep into the H.O.P.E. curriculum and move through Healing, Empowerment, and Restoration. You leave with the fullest H.O.P.E. Bag of any experience. At the inaugural launch planned for November 2026, HER Retreats center Black women, with broader retreats to follow.",
      "HER 03", "/her-retreats/", False),
     ("podcast", "Experience Lane", "The Podcast", "Unpack it in half an hour.",
      "THE Baggage Exchange Podcast is the storytelling arm of the brand, on Spotify. Each week a guest tells one real chapter of their life, then reads it a new way, guided by the Four H.O.P.E. Beats. It brings the work into ongoing conversation and points listeners toward the brunches, workshops, and retreats. Real stories, lighter bags.",

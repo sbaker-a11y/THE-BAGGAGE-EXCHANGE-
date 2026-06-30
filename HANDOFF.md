@@ -66,7 +66,7 @@
 The exact **longer founder/origin story** (the version containing personal identity language such as "a Black woman" and "a trauma survivor") was **NOT found** in the approved workspace sources or in memory. To avoid fabricating sensitive personal details, the About page uses:
 - the exact approved short starter ("This brand was created for people who are ready to name what they have carried, set down what no longer serves them, and walk forward with H.O.P.E."),
 - the required section structure and sign-off,
-- approved-source-only supporting language (survivor + doctorally prepared nurse practitioner; rooted in the Carolinas and BIPOC women).
+- approved-source-only supporting language (survivor + doctorally prepared nurse practitioner; rooted in the Carolinas and Black women).
 
 An HTML comment `ABOUT_LONG_COPY_NEEDED_FROM_USER` is placed in `about/index.html` immediately before the three story sections, explaining exactly what to replace. **Action for user:** supply the exact longer founder story text; drop it into those three sections, replacing the placeholder body copy. Do not invent details.
 
