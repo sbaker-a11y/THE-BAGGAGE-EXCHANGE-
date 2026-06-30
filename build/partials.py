@@ -167,13 +167,13 @@ PODCAST_COVER_SVG = """<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/
 
 # Luggage tag lane data: (cls, lane_eyebrow, name, sub, desc, code, href, soon)
 LANES = [
-    ("brunch", "Experience Lane", "Empowerment Brunch", "The warm front door.",
+    ("brunch", "Experience Lane", "Empowerment Brunch", "A seat at the table.",
      "THE Baggage Exchange Empowerment Brunch is the social front door to the brand. A warm, light gathering where good food, honest conversation, and one small exchange help guests set something down and leave a little lighter. No heavy lifting, just permission to put one thing down for a while.",
      "BRN 01", "/empowerment-brunch/", False),
     ("workshops", "Experience Lane", "Carry On Workshops", "Practice the work.",
      "Carry On Workshops by THE Baggage Exchange are guided experiences that help participants name what they carry, set down what no longer serves them, and leave with practical tools for moving forward with lighter bags.",
      "WRK 02", "/carry-on-workshops/", False),
-    ("her", "Experience Lane", "HER Retreats", "Go all the way in.",
+    ("her", "Experience Lane", "HER Retreats", "A deep dive.",
      "HER Retreats by THE Baggage Exchange are the deep-dive experience for women ready for immersive restoration. You travel for three to four immersive days within the United States or five to seven abroad, walking the full H.O.P.E. journey across a held, trauma-informed space. Guests set the heaviest things down, reframe the whole story, connect their lived experience to a calling, and leave with tools, a plan, and the confidence to step forward. This is where you dive deep into the H.O.P.E. curriculum and move through Healing, Empowerment, and Restoration. You leave with the fullest H.O.P.E. Bag of any experience. At the inaugural launch planned for November 2026, HER Retreats center BIPOC women, with broader retreats to follow.",
      "HER 03", "/her-retreats/", False),
     ("podcast", "Experience Lane", "The Podcast", "Unpack it in half an hour.",

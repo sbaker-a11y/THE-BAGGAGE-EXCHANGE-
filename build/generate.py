@@ -344,7 +344,7 @@ def build_brunch():
                 '<div class="feature t-rose reveal"><h3>Carry forward</h3><p>You leave with a warm welcome, a tag, a '
                 'short card set, and a small keepsake.</p></div></div></div></section>')
     detail_page("empowerment-brunch", "/empowerment-brunch/", "Experiences",
-                "Empowerment Brunch.", "The warm front door.",
+                "Empowerment Brunch.", "A seat at the table.",
                 "THE Baggage Exchange Empowerment Brunch is the social front door to the brand. A warm, light gathering where good food, honest conversation, and one small exchange help guests set something down and leave a little lighter. No heavy lifting, just permission to put one thing down for a while.",
                 sections,
                 "Empowerment Brunch attendees take home the lightest H.O.P.E. Bag\u2122: a warm welcome, a tag, a short card set, and a small keepsake.",
@@ -378,7 +378,7 @@ def build_workshops():
 
 def build_her():
     sections = ('<section class="section cream-surface-sec"><div class="wrap reveal">'
-                '<div class="sec-head reveal"><p class="eyebrow">Go all the way in</p>'
+                '<div class="sec-head reveal"><p class="eyebrow">A deep dive.</p>'
                 '<h2>Immersive restoration across the full journey.</h2></div>'
                 '<div class="cards-3">'
                 '<div class="feature t-plum reveal"><h3>Travel and time</h3><p>Three to four immersive days within the '
@@ -393,7 +393,7 @@ def build_her():
                 '<p>At the inaugural launch planned for November 2026, HER Retreats center BIPOC women, with broader '
                 'retreats to follow.</p></div></section>')
     detail_page("her-retreats", "/her-retreats/", "Experiences",
-                "HER Retreats.", "Go all the way in.",
+                "HER Retreats.", "A deep dive.",
                 "HER Retreats by THE Baggage Exchange are the deep-dive experience for women ready for immersive restoration. You travel for three to four immersive days within the United States or five to seven abroad, walking the full H.O.P.E. journey across a held, trauma-informed space. Guests set the heaviest things down, reframe the whole story, connect their lived experience to a calling, and leave with tools, a plan, and the confidence to step forward. This is where you dive deep into the H.O.P.E. curriculum and move through Healing, Empowerment, and Restoration. You leave with the fullest H.O.P.E. Bag of any experience. At the inaugural launch planned for November 2026, HER Retreats center BIPOC women, with broader retreats to follow.",
                 sections,
                 "Retreat guests take home the fullest H.O.P.E. Bag\u2122 of any experience: a complete journal, the H.O.P.E. Journey workbook, ritual cards, a keepsake, and resources to carry forward.",
@@ -496,7 +496,7 @@ def build_house():
             '<div class="sec-head reveal"><p class="eyebrow">One warm space</p>'
             '<h2>A home for the work.</h2></div>'
             '<div class="cards-3">'
-            '<div class="feature t-gold reveal"><h3>Brunches</h3><p>The warm front door, hosted in one place.</p></div>'
+            '<div class="feature t-gold reveal"><h3>Brunches</h3><p>A seat at the table, hosted in one place.</p></div>'
             '<div class="feature t-sage reveal"><h3>Workshops</h3><p>Hands on practice, all under one roof.</p></div>'
             '<div class="feature t-rose reveal"><h3>Community gatherings</h3><p>Space to come together and belong.</p></div>'
             '<div class="feature t-plum reveal"><h3>Podcast tapings</h3><p>Real stories recorded in the room.</p></div>'
