@@ -4,23 +4,281 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>THE Baggage Exchange | Trade what weighs you down for what lifts you up</title>
-<meta name="description" content="THE Baggage Exchange is a transformational lifestyle and community brand that helps women trade what weighs them down for what lifts them up.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,500&family=Mulish:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/styles.css">
+<style>
+:root{
+  --plum:#4D1A33; --plum-deep:#3A1226; --cream:#FBF5EC; --cream-hi:#FFFDF8;
+  --sand:#E3C6A0; --gold:#D9A93C; --espresso:#21160F; --sage:#6F9072; --rose:#C5746E;
+  --gold-metal:linear-gradient(180deg,#F0D27A 0%,#D4A53C 52%,#A9781F 100%);
+  --plum-surface:radial-gradient(120% 140% at 50% 0%,#5A2240 0%,#4D1A33 55%,#3A1224 100%);
+  --cream-surface:linear-gradient(180deg,#FFFDF8 0%,#FBF5EC 48%,#F2E8D7 100%);
+  --sheen:linear-gradient(180deg,rgba(255,255,255,.16),rgba(255,255,255,0) 46%);
+  --shadow-soft:0 18px 40px -22px rgba(33,22,15,.45);
+  --shadow-press:0 26px 60px -24px rgba(33,22,15,.55);
+  --wrap:1180px;
+  --display:'Playfair Display',Georgia,serif;
+  --body:'Mulish','Segoe UI',system-ui,sans-serif;
+  --mono:'Space Mono',ui-monospace,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);color:var(--espresso);background:var(--cream);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.08;color:var(--plum)}
+.wrap{width:100%;max-width:var(--wrap);margin:0 auto;padding:0 28px}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);font-weight:700}
+.section{padding:96px 0}
+.rule-perf{height:0;border:0;border-top:2px dashed rgba(217,169,60,.7);max-width:var(--wrap);margin:0 auto}
+.btn{display:inline-flex;align-items:center;gap:.5em;font-family:var(--body);font-weight:700;font-size:15px;letter-spacing:.01em;padding:15px 28px;border-radius:40px;cursor:pointer;border:0;transition:transform .2s ease,box-shadow .2s ease,background .2s}
+.btn-gold{background:var(--gold-metal);color:#3A2A0C;box-shadow:0 10px 26px -10px rgba(169,120,31,.7),inset 0 1px 0 rgba(255,255,255,.55)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 16px 34px -10px rgba(169,120,31,.8),inset 0 1px 0 rgba(255,255,255,.7)}
+.btn-ghost{background:transparent;color:var(--cream);border:1.5px solid rgba(251,245,236,.55)}
+.btn-ghost:hover{border-color:var(--gold);color:#fff}
+.btn-plum{background:var(--plum-surface);color:var(--cream);box-shadow:var(--shadow-soft),inset 0 1px 0 rgba(255,255,255,.12)}
+.btn-plum:hover{transform:translateY(-2px)}
+
+/* ---------- HEADER ---------- */
+.head{position:sticky;top:0;z-index:50;background:rgba(61,18,38,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(217,169,60,.28)}
+.head .wrap{display:flex;align-items:center;justify-content:space-between;height:74px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand svg{width:34px;height:34px}
+.brand .wm{font-family:var(--display);color:var(--cream);font-size:18px;line-height:1}
+.brand .wm b{font-weight:800;letter-spacing:.01em}
+.brand .wm span{font-weight:400;letter-spacing:.34em;font-size:15px}
+.nav{display:flex;align-items:center;gap:26px}
+.nav a{font-size:14px;font-weight:600;color:rgba(251,245,236,.86);transition:color .2s}
+.nav a:hover{color:var(--gold)}
+.nav .btn{padding:11px 20px;font-size:13px}
+.menu-btn{display:none;background:none;border:0;color:var(--cream);cursor:pointer}
+
+/* ---------- HERO ---------- */
+.hero{position:relative;background:var(--plum-surface);color:var(--cream);overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:var(--sheen);pointer-events:none}
+.hero::after{content:"";position:absolute;width:520px;height:520px;right:-140px;top:-160px;background:radial-gradient(circle,rgba(217,169,60,.22),transparent 70%);pointer-events:none}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:54px;align-items:center;padding-top:84px;padding-bottom:92px}
+.hero h1{color:var(--cream);font-size:clamp(38px,5.4vw,68px);letter-spacing:-.01em;margin:18px 0 22px}
+.hero h1 em{font-style:italic;color:var(--gold);font-weight:500}
+.hero p.lead{font-size:19px;color:rgba(251,245,236,.9);max-width:33em;margin-bottom:14px}
+.hero .cta{display:flex;gap:14px;flex-wrap:wrap;margin:28px 0 22px}
+.hero .fineprint{font-size:13.5px;color:rgba(251,245,236,.62);max-width:34em;line-height:1.6}
+.hero-art{position:relative;display:flex;justify-content:center}
+.hero-art .passport{width:300px;filter:drop-shadow(0 40px 50px rgba(0,0,0,.45));transform:rotate(-6deg);transition:transform .5s ease}
+.hero-art .passport:hover{transform:rotate(-3deg) translateY(-6px)}
+.hero-art .tagline-chip{position:absolute;bottom:6px;left:50%;transform:translateX(-50%) rotate(-6deg);background:var(--gold-metal);color:#3A2A0C;font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.12em;padding:7px 14px;border-radius:30px;box-shadow:0 10px 22px -10px rgba(0,0,0,.5);white-space:nowrap}
+.journey-arrows{display:flex;gap:10px;align-items:center;flex-wrap:wrap;font-family:var(--mono);font-size:12.5px;letter-spacing:.14em;color:rgba(251,245,236,.8);margin-top:6px}
+.hero .lead-close{margin-top:16px;margin-bottom:2px;font-weight:600;color:rgba(251,245,236,.95)}
+.journey-arrows b{color:var(--gold);font-weight:700}
+
+/* ---------- MARQUEE ---------- */
+.marquee{background:var(--plum-deep);border-top:1px solid rgba(217,169,60,.3);border-bottom:1px solid rgba(217,169,60,.3);overflow:hidden;padding:13px 0}
+.marquee-track{display:flex;gap:0;white-space:nowrap;width:max-content;animation:scroll 46s linear infinite}
+.marquee:hover .marquee-track{animation-play-state:paused}
+.marquee span{font-family:var(--display);font-style:italic;font-size:17px;color:var(--cream);padding:0 30px;display:inline-flex;align-items:center;gap:60px}
+.marquee span::after{content:"\25C6";color:var(--gold);font-size:11px;font-style:normal}
+@keyframes scroll{to{transform:translateX(-50%)}}
+
+/* ---------- JOURNEY ---------- */
+.journey{background:var(--cream-surface)}
+.sec-head{max-width:640px;margin-bottom:54px}
+.sec-head h2{font-size:clamp(28px,3.6vw,42px);margin:14px 0 16px}
+.sec-head p{font-size:17px;color:#4a3a30}
+.sec-head .flourish{font-family:var(--display);font-style:italic;font-size:22px;color:var(--plum);margin-top:14px}
+.stages{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.stage{position:relative;background:#fff;border-radius:16px;padding:28px 22px 26px;box-shadow:var(--shadow-soft),inset 0 1px 0 #fff;border-top:5px solid var(--tone);overflow:hidden}
+.stage .lt{font-family:var(--display);font-size:46px;font-weight:800;color:var(--tone);line-height:1;opacity:.9}
+.stage h3{font-size:21px;margin:8px 0 8px}
+.stage .one{font-style:italic;font-family:var(--display);color:var(--tone);font-size:15px;margin-bottom:10px}
+.stage p{font-size:14.5px;color:#54453a}
+.stage:nth-child(1){--tone:var(--sage)}
+.stage:nth-child(2){--tone:var(--gold)}
+.stage:nth-child(3){--tone:var(--rose)}
+.stage:nth-child(4){--tone:var(--plum)}
+
+/* ---------- LANES ---------- */
+.lanes{background:var(--sand);position:relative}
+.lanes::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,.35),transparent 30%);pointer-events:none}
+.lanes .wrap{position:relative}
+.tags{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.tag{position:relative;background:var(--tag-bg);color:var(--tag-ink);border-radius:14px;padding:34px 22px 22px;min-height:286px;display:flex;flex-direction:column;box-shadow:var(--shadow-soft);transition:transform .28s cubic-bezier(.2,.7,.3,1),box-shadow .28s;transform-origin:50% -18px}
+.tag::before{content:"";position:absolute;inset:8px;border:1.5px dashed var(--tag-stitch);border-radius:9px;opacity:.55;pointer-events:none}
+.tag .grommet{position:absolute;top:13px;left:50%;transform:translateX(-50%);width:18px;height:18px;border-radius:50%;border:3px solid var(--tag-stitch);background:rgba(0,0,0,.12)}
+.tag .cord{position:absolute;top:-12px;left:50%;width:24px;height:24px;transform:translateX(-50%)}
+.tag .lane-eyebrow{font-family:var(--mono);font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--tag-stitch);margin-top:10px;font-weight:700}
+.tag h3{color:var(--tag-ink);font-size:25px;margin:8px 0 6px;line-height:1.04}
+.tag .sub{font-family:var(--display);font-style:italic;font-size:15px;color:var(--tag-ink);opacity:.86;margin-bottom:auto}
+.tag .tagdesc{font-size:12.5px;line-height:1.5;color:var(--tag-ink);opacity:.82;margin:9px 0 auto}
+.tag.her .sub{margin-bottom:6px}
+.tag .tagfoot{display:flex;align-items:flex-end;justify-content:space-between;margin-top:18px}
+.tag .barcode{width:74px;height:30px;background:repeating-linear-gradient(90deg,var(--tag-ink) 0,var(--tag-ink) 2px,transparent 2px,transparent 4px);opacity:.8}
+.tag .code{font-family:var(--mono);font-size:12px;font-weight:700;letter-spacing:.12em;color:var(--tag-ink)}
+.tag:hover{transform:rotate(-2.4deg) translateY(-7px);box-shadow:var(--shadow-press)}
+.tag .link{font-family:var(--mono);font-size:11px;letter-spacing:.14em;margin-top:14px;color:var(--tag-ink);opacity:.7}
+.tag.brunch{--tag-bg:var(--gold-metal);--tag-ink:#3A2A0C;--tag-stitch:#7a5a18}
+.tag.workshops{--tag-bg:linear-gradient(180deg,#7C9D80,#6F9072);--tag-ink:#FBF5EC;--tag-stitch:#cfe0d1}
+.tag.her{--tag-bg:var(--plum-surface);--tag-ink:#FBF5EC;--tag-stitch:var(--gold)}
+.tag.podcast{--tag-bg:var(--cream-surface);--tag-ink:#4D1A33;--tag-stitch:#cBA45a}
+.tag.shop{--tag-bg:linear-gradient(180deg,#EAD2AE,#E3C6A0);--tag-ink:#5a4123;--tag-stitch:#9a7a42}
+.tag.house{--tag-bg:linear-gradient(180deg,#CE817B,#C5746E);--tag-ink:#FBF5EC;--tag-stitch:#f0d2cf}
+.tag.house{opacity:.92}
+.tag.house .soon{position:absolute;top:30px;right:14px;font-family:var(--mono);font-size:9px;letter-spacing:.16em;background:rgba(251,245,236,.9);color:#9A4F49;padding:3px 8px;border-radius:20px;font-weight:700}
+
+/* ---------- BAG (deep) ---------- */
+.bag{background:var(--espresso);color:var(--cream);position:relative;overflow:hidden}
+.bag::after{content:"";position:absolute;width:480px;height:480px;left:-160px;bottom:-200px;background:radial-gradient(circle,rgba(217,169,60,.16),transparent 70%)}
+.bag .wrap{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:center}
+.bag h2{color:var(--cream);font-size:clamp(28px,3.6vw,40px);margin:14px 0 18px}
+.bag p{color:rgba(251,245,236,.84);font-size:16.5px;margin-bottom:22px}
+.bag .holds{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:8px}
+.bag .hold{background:rgba(251,245,236,.06);border:1px solid rgba(217,169,60,.25);border-radius:12px;padding:16px 16px}
+.bag .hold b{font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:var(--gold);display:block;margin-bottom:5px}
+.bag .hold span{font-size:14px;color:rgba(251,245,236,.86)}
+.bag .levels{border-left:2px dashed rgba(217,169,60,.5);padding-left:22px;display:flex;flex-direction:column;gap:18px}
+.bag .lvl b{font-family:var(--display);font-size:18px;color:var(--gold)}
+.bag .lvl p{font-size:14.5px;margin:4px 0 0;color:rgba(251,245,236,.8)}
+
+/* ---------- PASSPORT ---------- */
+.passport-sec{background:var(--cream-surface)}
+.passport-sec .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:48px;align-items:center}
+.passport-sec h2{font-size:clamp(28px,3.6vw,40px);margin:14px 0 16px}
+.passport-sec p{font-size:16.5px;color:#4a3a30;margin-bottom:14px}
+.passport-open{border-radius:14px;box-shadow:var(--shadow-press);overflow:hidden}
+.ink-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.ink{font-family:var(--mono);font-size:11px;letter-spacing:.1em;padding:6px 12px;border-radius:30px;color:#fff}
+
+/* ---------- PODCAST ---------- */
+.pod{background:var(--plum-surface);color:var(--cream);position:relative;overflow:hidden}
+.pod::before{content:"";position:absolute;inset:0;background:var(--sheen)}
+.pod .wrap{position:relative;display:grid;grid-template-columns:300px 1fr;gap:48px;align-items:center}
+.pod h2{color:var(--cream);font-size:clamp(28px,3.6vw,42px);margin:14px 0 16px}
+.pod h2 em{font-style:italic;color:var(--gold);font-weight:500}
+.pod p{color:rgba(251,245,236,.86);font-size:16.5px;margin-bottom:20px;max-width:36em}
+.pod .when{font-family:var(--mono);font-size:13px;letter-spacing:.12em;color:var(--gold);margin-bottom:22px}
+.pod-cover{border-radius:18px;box-shadow:var(--shadow-press);overflow:hidden}
+
+/* ---------- FOUNDER ---------- */
+.founder{background:var(--cream)}
+.founder .wrap{max-width:820px;text-align:center}
+.founder h2{font-size:clamp(26px,3.4vw,38px);margin:14px 0 18px}
+.founder p{font-size:18px;color:#46382e;font-style:italic;font-family:var(--display);line-height:1.6;margin-bottom:24px}
+
+/* ---------- FINAL CTA ---------- */
+.final{background:var(--sand);position:relative;text-align:center}
+.final h2{font-size:clamp(30px,4vw,48px);margin-bottom:14px}
+.final p{font-size:17px;color:#5a4123;max-width:34em;margin:0 auto 28px}
+.final .cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+
+/* ---------- FOOTER ---------- */
+.foot{background:var(--plum-deep);color:rgba(251,245,236,.82);padding:64px 0 30px}
+.foot .grid{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:40px;margin-bottom:40px}
+.foot .wm{font-family:var(--display);color:var(--cream);font-size:20px;margin-bottom:12px}
+.foot .wm b{font-weight:800}.foot .wm span{letter-spacing:.3em;font-weight:400;font-size:16px}
+.foot .blurb{font-size:14px;max-width:30em;color:rgba(251,245,236,.7)}
+.foot h4{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+.foot ul{list-style:none}
+.foot li{margin-bottom:9px}
+.foot a{font-size:14px;color:rgba(251,245,236,.78)}
+.foot a:hover{color:var(--gold)}
+.foot .lbl{display:block;font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;color:rgba(251,245,236,.5);margin-top:2px;line-height:1.3}
+.foot .legal{border-top:1px solid rgba(217,169,60,.25);padding-top:22px;font-size:11.5px;color:rgba(251,245,236,.48);line-height:1.65;max-width:none}.foot .legal .mark{font-family:var(--display);color:var(--gold);font-size:15px;letter-spacing:.04em;margin-bottom:5px}.foot .legal p{margin-bottom:9px}.foot .legal .copy{color:rgba(251,245,236,.62);margin-bottom:0}
+
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+
+@media(max-width:920px){
+  .hero .wrap{grid-template-columns:1fr;gap:36px}
+  .hero-art{order:-1}
+  .stages{grid-template-columns:repeat(2,1fr)}
+  .tags{grid-template-columns:repeat(2,1fr)}
+  .bag .wrap,.passport-sec .wrap,.pod .wrap{grid-template-columns:1fr;gap:30px}
+  .pod .wrap{justify-items:center}
+  .nav{display:none}
+  .menu-btn{display:block}
+  .foot .grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:560px){
+  .section{padding:64px 0}
+  .stages,.tags,.bag .holds,.foot .grid{grid-template-columns:1fr}
+  .hero .cta{flex-direction:column;align-items:flex-start}
+  .btn{width:100%;justify-content:center}
+}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  .reveal{opacity:1;transform:none}
+}
+
+.sys{background:var(--cream-surface);color:var(--espresso);position:relative;overflow:hidden}
+.sys::before{content:"";position:absolute;inset:0;background:var(--sheen)}
+.sys::after{content:"";position:absolute;width:480px;height:480px;right:-150px;bottom:-200px;background:radial-gradient(circle,rgba(217,169,60,.16),transparent 70%)}
+.sys .wrap{position:relative}
+.sys .sec-head h2{color:var(--plum)}
+.sys .sec-head p{color:#4a3a30}
+.sys .sec-head p em{font-style:italic;color:var(--plum);font-weight:600}
+.sys-flow{position:relative;max-width:720px;margin:0 auto}
+.sys-flow::before{content:"";position:absolute;left:27px;top:40px;bottom:40px;width:2px;background:linear-gradient(180deg,#B8881F,#6F9072,#C5746E,#A8623A);opacity:.7}
+.sys-step{display:flex;gap:24px;align-items:flex-start;position:relative;padding:16px 0}
+.sys-node{flex:none;width:56px;height:56px;border-radius:50%;background:var(--cream-hi);border:2px solid var(--c);color:var(--c);font-family:var(--mono);font-weight:700;font-size:16px;display:flex;align-items:center;justify-content:center;z-index:1;box-shadow:var(--shadow-soft)}
+.sys-body{padding-top:7px}
+.sys-name{font-family:var(--mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--c);font-weight:700}
+.sys-body h3{color:var(--plum);font-size:22px;margin:5px 0 7px}
+.sys-body p{color:#54453a;font-size:15.5px;max-width:34em}
+.sys-poweredby{text-align:center;font-family:var(--mono);font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:#A9781F;font-weight:700;margin:0 0 26px}
+.sys-foot{text-align:center;margin-top:40px}
+.sys-foot p{font-family:var(--display);font-style:italic;font-size:21px;color:var(--plum);margin-bottom:20px}
+@media(max-width:560px){.sys-node{width:46px;height:46px;font-size:14px}.sys-flow::before{left:22px}}
+
+.nav{gap:22px}
+.navdrop{position:relative}
+.navdrop-t{background:none;border:0;cursor:pointer;font-family:var(--body);font-size:14px;font-weight:600;color:rgba(251,245,236,.86);display:inline-flex;align-items:center;gap:6px;padding:0;transition:color .2s}
+.navdrop-t .car{font-size:8px;opacity:.8;transition:transform .2s}
+.navdrop:hover .navdrop-t,.navdrop:focus-within .navdrop-t{color:var(--gold)}
+.navdrop:hover .navdrop-t .car,.navdrop:focus-within .navdrop-t .car{transform:rotate(180deg)}
+.navdrop-m{position:absolute;top:calc(100% + 16px);left:50%;transform:translateX(-50%) translateY(8px);min-width:226px;background:rgba(48,14,30,.98);backdrop-filter:blur(12px);border:1px solid rgba(217,169,60,.3);border-radius:14px;padding:10px;display:flex;flex-direction:column;gap:1px;opacity:0;visibility:hidden;transition:opacity .2s,transform .2s;box-shadow:0 26px 54px -20px rgba(0,0,0,.62);z-index:60}
+.navdrop-m::before{content:"";position:absolute;top:-16px;left:0;right:0;height:16px}
+.navdrop:hover .navdrop-m,.navdrop:focus-within .navdrop-m,.navdrop.open .navdrop-m{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0)}
+.navdrop-m a{font-size:13.5px;font-weight:600;color:rgba(251,245,236,.82);padding:9px 14px;border-radius:9px;white-space:nowrap;transition:background .15s,color .15s}
+.navdrop-m a:hover{background:rgba(217,169,60,.14);color:var(--gold)}
+@media(max-width:920px){.head .wrap{position:relative}.nav{display:none;position:absolute;top:calc(100% + 6px);left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:#330F22;backdrop-filter:blur(12px);padding:10px 20px 18px;border-radius:0 0 16px 16px;box-shadow:0 26px 54px -20px rgba(0,0,0,.6);border-top:1px solid rgba(217,169,60,.22);z-index:80}.nav.nav-open{display:flex}.nav>a{padding:13px 2px;border-bottom:1px solid rgba(251,245,236,.08)}.nav>a.btn{margin-top:12px;text-align:center;border-bottom:0}.menu-btn{display:block}.navdrop{display:block;position:static}.navdrop-t{width:100%;justify-content:space-between;padding:13px 2px;border-bottom:1px solid rgba(251,245,236,.08)}.navdrop-m{position:static;transform:none;opacity:1;visibility:visible;display:none;min-width:0;background:transparent;border:0;box-shadow:none;padding:2px 0 8px 14px}.navdrop.open .navdrop-m{display:flex;transform:none}.navdrop-m::before{display:none}.navdrop-m a{padding:9px 8px}}
+/* why come invitation */
+.whycome{background:var(--plum-surface);color:var(--cream);padding:96px 0;position:relative;overflow:hidden;text-align:center}
+.whycome .wrap{position:relative;max-width:780px}
+.whycome .eyebrow{color:#F0D27A}
+.whycome h2{color:var(--cream-hi);font-size:clamp(28px,3.8vw,44px);margin:14px 0 22px}
+.whycome h2 em{font-style:italic;color:#F0D27A}
+.whycome .lead{font-size:19px;color:rgba(251,245,236,.93);max-width:36em;margin:0 auto 18px}
+.whycome p{font-size:16.5px;color:rgba(251,245,236,.8);max-width:40em;margin:0 auto 18px;line-height:1.72}
+.whycome .close{font-family:var(--display);font-style:italic;font-size:23px;color:#F0D27A;margin:26px auto 30px;max-width:30em}
+.whycome .cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.hero-copy .descriptor{font-size:18.5px;line-height:1.55;color:var(--cream-hi);max-width:33em;margin:2px 0 20px;font-weight:500}
+.hero-copy .descriptor b{color:#F0D27A;font-weight:700}
+.hero-copy .descriptor .tm{font-size:.5em;vertical-align:super;font-weight:700;letter-spacing:0}
+#how .sec-head p{margin-bottom:1.05em}
+</style>
 </head>
-<body><header class="head"><div class="wrap">
-<a class="brand" href="./index.html" aria-label="THE Baggage Exchange home"><img src="assets/logo-reversed.svg" alt="THE Baggage Exchange"></a>
-<nav class="nav" aria-label="Primary"><a href="./index.html" aria-current="page">Home</a><div class="has-menu" data-open="false"><button type="button" aria-haspopup="true" aria-expanded="false">About <span class="caret">▾</span></button><div class="menu"><a href="about/index.html">Meet the Founder</a><a href="TheBaggageExchange_Press.html">Press &amp; Speaking</a></div></div><div class="has-menu" data-open="false"><button type="button" aria-haspopup="true" aria-expanded="false">The H.O.P.E. System&#8482; <span class="caret">▾</span></button><div class="menu"><a href="hope-curriculum/index.html">The H.O.P.E. Curriculum</a><a href="hope-journey/index.html">The H.O.P.E. Journey</a><a href="hope-beats/index.html">The Four H.O.P.E. Beats</a><a href="hope-bag/index.html">The H.O.P.E. Bag</a></div></div><div class="has-menu" data-open="false"><button type="button" aria-haspopup="true" aria-expanded="false">Experiences <span class="caret">▾</span></button><div class="menu"><a href="hope-passport/index.html">The H.O.P.E. Passport</a><a href="experiences/index.html">Experiences Hub</a><a href="empowerment-brunch/index.html">Empowerment Brunch</a><a href="carry-on-workshops/index.html">Carry On Workshop</a><a href="her-retreats/index.html">HER Retreats</a><a href="podcast/index.html">The Podcast</a><a href="hope-shop/index.html">The H.O.P.E. Shop</a><a href="exchange-house/index.html">The Exchange House</a></div></div><div class="has-menu" data-open="false"><button type="button" aria-haspopup="true" aria-expanded="false">Bring Us In <span class="caret">▾</span></button><div class="menu"><a href="corporate-experiences/index.html">Corporate Experiences</a><a href="community-engagement/index.html">Community Engagement</a><a href="certification-licensing/index.html">Certification or Licensing</a></div></div><a href="contact/index.html">Contact</a><a class="btn btn-gold" href="contact/index.html">Begin Your Exchange</a></nav>
-<button class="menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
-</div></header>
-<div class="mobile-nav" aria-label="Mobile navigation"><a href="./index.html">Home</a><div class="m-group"><span>About</span><a href="about/index.html">Meet the Founder</a><a href="TheBaggageExchange_Press.html">Press &amp; Speaking</a></div><div class="m-group"><span>The H.O.P.E. System&#8482;</span><a href="hope-curriculum/index.html">The H.O.P.E. Curriculum</a><a href="hope-journey/index.html">The H.O.P.E. Journey</a><a href="hope-beats/index.html">The Four H.O.P.E. Beats</a><a href="hope-bag/index.html">The H.O.P.E. Bag</a></div><div class="m-group"><span>Experiences</span><a href="hope-passport/index.html">The H.O.P.E. Passport</a><a href="experiences/index.html">Experiences Hub</a><a href="empowerment-brunch/index.html">Empowerment Brunch</a><a href="carry-on-workshops/index.html">Carry On Workshop</a><a href="her-retreats/index.html">HER Retreats</a><a href="podcast/index.html">The Podcast</a><a href="hope-shop/index.html">The H.O.P.E. Shop</a><a href="exchange-house/index.html">The Exchange House</a></div><div class="m-group"><span>Bring Us In</span><a href="corporate-experiences/index.html">Corporate Experiences</a><a href="community-engagement/index.html">Community Engagement</a><a href="certification-licensing/index.html">Certification or Licensing</a></div><a href="contact/index.html">Contact</a><a class="btn btn-gold" href="contact/index.html">Begin Your Exchange</a></div><section class="hero" id="top">
+<body>
+
+<!-- HEADER -->
+<header class="head">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="THE Baggage Exchange home">
+      <svg viewBox="0 0 100 100" aria-hidden="true"><defs><linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F0D27A"/><stop offset=".5" stop-color="#D4A53C"/><stop offset="1" stop-color="#A9781F"/></linearGradient></defs><path d="M34 30 q0-12 16-12 q16 0 16 12" fill="none" stroke="#FBF5EC" stroke-width="6" stroke-linecap="round"/><rect x="22" y="30" width="56" height="46" rx="8" fill="url(#g1)"/><line x1="22" y1="50" x2="78" y2="50" stroke="#4D1A33" stroke-width="5"/><rect x="44" y="44" width="12" height="12" rx="2" fill="#4D1A33"/></svg>
+      <span class="wm"><b>THE BAGGAGE</b><br><span>EXCHANGE</span></span>
+    </a>
+    <nav class="nav"><a href="index.html" class="active">Home</a><div class="navdrop"><button class="navdrop-t" type="button">About <span class="car">&#9662;</span></button><div class="navdrop-m"><a href="about/index.html">Meet the Founder</a><a href="TheBaggageExchange_Press.html">Press &amp; Speaking</a></div></div><div class="navdrop"><button class="navdrop-t" type="button">The H.O.P.E. System&#8482; <span class="car">&#9662;</span></button><div class="navdrop-m"><a href="hope-curriculum/index.html">The H.O.P.E. Curriculum</a><a href="hope-journey/index.html">The H.O.P.E. Journey</a><a href="hope-beats/index.html">The Four H.O.P.E. Beats</a><a href="hope-bag/index.html">The H.O.P.E. Bag</a></div></div><div class="navdrop"><button class="navdrop-t" type="button">Experiences <span class="car">&#9662;</span></button><div class="navdrop-m"><a href="hope-passport/index.html">The H.O.P.E. Passport</a><a href="experiences/index.html">Experiences Hub</a><a href="experiences/index.html">Coaching</a><a href="empowerment-brunch/index.html">Empowerment Brunch</a><a href="carry-on-workshops/index.html">Carry On Workshops</a><a href="her-retreats/index.html">HER Retreats</a><a href="podcast/index.html">The Podcast</a><a href="hope-shop/index.html">The H.O.P.E. Shop</a><a href="exchange-house/index.html">The Exchange House</a></div></div><div class="navdrop"><button class="navdrop-t" type="button">Bring Us In <span class="car">&#9662;</span></button><div class="navdrop-m"><a href="corporate-experiences/index.html">Corporate Experiences</a><a href="community-engagement/index.html">Community Engagement</a><a href="certification-licensing/index.html">Certification or Licensing</a></div></div><a class="btn btn-gold" href="contact/index.html">Contact</a></nav>
+    <button class="menu-btn" aria-label="Menu">&#9776;</button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
   <div class="wrap">
     <div class="hero-copy">
-      <p class="eyebrow">For women ready to set something down</p>
+      <p class="eyebrow">Experiences &middot; Coaching &middot; Podcast &middot; Community</p>
       <h1>Trade what weighs you down for <em>what lifts you up.</em></h1>
-      <p class="lead">You have arrived! Please proceed to one of our Experience Lanes and choose your exchange. Got Baggage? Let&#8217;s check it! No matter the size of your bags, we make space to set them down. Feel free to release any emotional, physical, mental, or spiritual weight that you carry as you journey through</p>
+      <p class="descriptor"><b>THE Baggage Exchange<sup class="tm">&#8482;</sup></b> is a transformational lifestyle brand and podcast, with brunches, workshops, retreats, and coaching that help women set down what they carry and move forward lighter.</p>
+      <p class="lead">You have arrived. Got baggage? Let&#8217;s check it. Set down any emotional, physical, mental, or spiritual weight you carry as you journey through</p>
       <div class="journey-arrows"><b>HEALING</b> &rarr; <b>OPPORTUNITY</b> &rarr; <b>PURPOSE</b> &rarr; <b>EMPOWERMENT</b></div>
       <p class="lead lead-close">Take your time. Enjoy your stay. Welcome to THE Baggage Exchange!</p>
       <div class="cta">
@@ -51,7 +309,8 @@
         </g>
         <text x="280" y="400" text-anchor="middle" font-family="'Playfair Display',serif" font-size="72" font-weight="700" letter-spacing="8" fill="#D9A93C">PASSPORT</text>
         <line x1="160" y1="430" x2="400" y2="430" stroke="#D9A93C" stroke-width="1.4" stroke-opacity=".7"/>
-        <text x="280" y="470" text-anchor="middle" font-family="'Playfair Display',serif" font-size="20" font-style="italic" fill="#FBF5EC">Check your baggage. Journey lighter.</text>
+        <rect x="116" y="451" width="328" height="44" rx="22" fill="url(#pgold)"/>
+        <text x="280" y="479" text-anchor="middle" font-family="'Space Mono',monospace" font-size="15" font-weight="700" letter-spacing="2" fill="#3A2A0C">PLEASE CHECK YOUR BAGGAGE</text>
         <g transform="translate(280,650)">
           <circle r="56" fill="none" stroke="#D9A93C" stroke-width="2"/>
           <circle r="48" fill="none" stroke="#D9A93C" stroke-width="1" stroke-opacity=".5"/>
@@ -59,7 +318,6 @@
           <text y="16" text-anchor="middle" font-family="'Space Mono',monospace" font-size="9" letter-spacing="3" fill="#FBF5EC">THE JOURNEY</text>
         </g>
       </svg>
-      <span class="tagline-chip">CHECK YOUR BAGGAGE</span>
     </div>
   </div>
 </section>
@@ -83,37 +341,55 @@
     <div class="sec-head reveal">
       <p class="eyebrow">The method</p>
       <h2>THE Baggage Exchange is how it all begins.</h2>
-      <p>It is more than a brand or company name. THE Baggage Exchange&#8482; is the signature method, movement, and experience. It is the <em>intentional</em> act of setting your bags down, facing what you have been carrying, and choosing what to keep, what to question, and what to let go for good. The exchange is where it begins. That first act opens you to The H.O.P.E. System&#8482;, which helps to shape what happens afterwards.</p>
+      <p>THE Baggage Exchange is the <em>intentional</em> act of setting your bags down and choosing what to carry forward. It is more than a brand or a name. It is the signature method, the movement, and the experience.</p>
+      <p>We all haul something. Emotional, mental, physical, spiritual. The exchange starts the moment you decide to set it down, open it up, and look honestly at what is inside. You take inventory and sort it into three piles: what is purposeful, what is questionable, and what serves no purpose at all.</p>
+      <p>Then you repack. What's purposeful comes with you. What's questionable, you take a real look at it instead of letting it slide back in. What serves no purpose gets let go for good. It does not go back in the bag, not even just in case.</p>
+      <p>What you are left with is a lighter bag. And a lighter bag changes everything.</p>
+      <p>The H.O.P.E. System&#8482; was created to keep that change going, and you meet it in every experience we offer.</p>
     </div>
-    <p class="sys-poweredby reveal">Four parts, one system</p>
+    <p class="sys-poweredby reveal">Inside The H.O.P.E. System</p>
     <div class="sys-flow">
-      <div class="sys-step reveal" style="--c:#B8881F"><div class="sys-node">01</div><div class="sys-body"><span class="sys-name">Guided by</span><h3>The H.O.P.E. Curriculum&#8482;</h3><p>The structured method that shapes every brunch, workshop, and retreat, so the work is never random.</p></div></div>
-      <div class="sys-step reveal" style="--c:var(--rose)"><div class="sys-node">02</div><div class="sys-body"><span class="sys-name">Powered by</span><h3>The H.O.P.E. Journey&#8482;</h3><p>Healing, Opportunity, Purpose, and Empowerment, the forward movement that drives the whole experience.</p></div></div>
-      <div class="sys-step reveal" style="--c:var(--sage)"><div class="sys-node">03</div><div class="sys-body"><span class="sys-name">Practiced through</span><h3>The Four H.O.P.E. Beats&#8482;</h3><p>Bag Check, Plot Twist, The Spark, and One Bold Move, the rhythm every story moves through.</p></div></div>
-      <div class="sys-step reveal" style="--c:#A8623A"><div class="sys-node">04</div><div class="sys-body"><span class="sys-name">Carried forward through</span><h3>The H.O.P.E. Bag&#8482;</h3><p>A real and symbolic reminder of what you choose to set down and carry forward.</p></div></div>
+      <div class="sys-step reveal" style="--c:#B8881F"><div class="sys-node">01</div><div class="sys-body"><span class="sys-name">Guided by</span><h3>The H.O.P.E. Curriculum</h3><p>The blueprint of the whole journey &#8212; taught live in the Carry On Workshops, its journals and self-help books in the H.O.P.E. Shop.</p></div></div>
+      <div class="sys-step reveal" style="--c:var(--rose)"><div class="sys-node">02</div><div class="sys-body"><span class="sys-name">Powered by</span><h3>The H.O.P.E. Journey</h3><p>Healing, Opportunity, Purpose, and Empowerment &#8212; the path you walk in coaching and on the HER Retreats.</p></div></div>
+      <div class="sys-step reveal" style="--c:var(--sage)"><div class="sys-node">03</div><div class="sys-body"><span class="sys-name">Practiced through</span><h3>The Four H.O.P.E. Beats</h3><p>Bag Check, Plot Twist, The Spark, and One Bold Move &#8212; the storytelling rhythm of the podcast and the Empowerment Brunch.</p></div></div>
+      <div class="sys-step reveal" style="--c:#A8623A"><div class="sys-node">04</div><div class="sys-body"><span class="sys-name">Carried forward through</span><h3>The H.O.P.E. Bag</h3><p>What you carry home &#8212; a real reminder of what you set down and what you keep.</p></div></div>
     </div>
     <div class="sys-foot reveal">
-      <p>That is the whole system. The only question left is: Where do you want to begin?</p>
+      <p>And it is all building toward The Exchange House, the whole system under one roof.</p>
+      <p>That is The H.O.P.E. System. The only question left is: Where do you want to begin?</p>
       <a class="btn btn-gold" href="#lanes">Choose your exchange</a>
     </div>
   </div>
 </section>
 
-    <section class="section lanes" id="lanes">
+    <!-- WHY COME -->
+<section class="whycome">
+  <div class="wrap">
+    <p class="eyebrow">Why come</p>
+    <h2>You have the map. <em>The journey is the thing.</em></h2>
+    <p class="lead">We put the whole method out in the open, on purpose. Knowing how the exchange works and actually setting the bag down are two different things.</p>
+    <p>Nobody ever struggled for lack of instructions. The hard part is opening the bag alone, in the dark, at 2am. That part you do not do by yourself.</p>
+    <p>So here is what you come for. A guide who has carried real weight and found the way through. A room held with care, alongside other women doing the same brave thing. The depth and tools behind the method, and the H.O.P.E. Bag you earn by showing up. But most importantly, the <strong><em>push</em></strong> to finally act, instead of postponing it one more season.</p>
+    <p class="close">You can read about the exchange for free. You make it with us.</p>
+    <div class="cta"><a class="btn btn-gold" href="#lanes">Choose your exchange</a><a class="btn btn-ghost" href="experiences/index.html">Work with a coach</a></div>
+  </div>
+</section>
+
+<section class="section lanes" id="lanes">
   <div class="wrap">
     <div class="sec-head reveal">
-      <p class="eyebrow">Six experience lanes</p>
-      <h2>Choose where you begin.</h2>
-      <p>Each lane is a different way to exchange what weighs you down for what lifts you up. Start small or go all in. Whether you want a warm gathering, a hands on workshop, or a few immersive days away, there is a lane that meets you where you are, and every in-person lane sends you home with a H.O.P.E. Bag.</p>
+      <p class="eyebrow">Six Experiences</p>
+      <h2>Choose your lane.</h2>
+      <p>Each lane is a different way to exchange what weighs you down for what lifts you up. Start small or go all in. Whether you want a warm gathering, a hands-on workshop, or a few immersive days away, there is a lane that meets you where you are, and every in-person lane sends you home with a H.O.P.E. Bag.</p>
       <p class="flourish">Ready? Let&#8217;s travel.</p>
     </div>
     <div class="tags">
-      <a class="tag brunch reveal" href="empowerment-brunch/index.html" aria-label="Open Empowerment Brunch"><span class="grommet"></span><p class="lane-eyebrow">Experience Lane</p><h3>Empowerment Brunch</h3><p class="sub">A seat at the table.</p><div class="tagfoot"><div class="barcode"></div><span class="code">BRN 01</span></div></a>
-      <a class="tag workshops reveal" href="carry-on-workshops/index.html" aria-label="Open Carry On Workshop"><span class="grommet"></span><p class="lane-eyebrow">Experience Lane</p><h3>Carry On Workshop</h3><p class="sub">Practice the work.</p><div class="tagfoot"><div class="barcode"></div><span class="code">WRK 02</span></div></a>
-      <a class="tag her reveal" href="her-retreats/index.html" aria-label="Open HER Retreats"><span class="grommet"></span><p class="lane-eyebrow">Experience Lane</p><h3>HER Retreats</h3><p class="sub">A deep dive.</p><div class="tagfoot"><div class="barcode"></div><span class="code">HER 03</span></div></a>
-      <a class="tag podcast reveal" href="podcast/index.html" aria-label="Open The Podcast"><span class="grommet"></span><p class="lane-eyebrow">Experience Lane</p><h3>The Podcast</h3><p class="sub">Unpack it in half an hour.</p><div class="tagfoot"><div class="barcode"></div><span class="code">POD 04</span></div></a>
-      <a class="tag shop reveal" href="hope-shop/index.html" aria-label="Open The H.O.P.E. Shop"><span class="grommet"></span><p class="lane-eyebrow">Experience Lane</p><h3>The H.O.P.E. Shop</h3><p class="sub">Shop the tools.</p><div class="tagfoot"><div class="barcode"></div><span class="code">SHP 05</span></div></a>
-      <a class="tag house reveal" href="exchange-house/index.html" aria-label="Open The Exchange House"><span class="grommet"></span><span class="soon">COMING SOON</span><p class="lane-eyebrow">Experience Lane</p><h3>The Exchange House</h3><p class="sub">A place of our own.</p><div class="tagfoot"><div class="barcode"></div><span class="code">HSE 06</span></div></a>
+      <article class="tag brunch reveal"><span class="grommet"></span><p class="lane-eyebrow">Exchange Lane</p><h3>Empowerment Brunch</h3><p class="sub">A seat at the table.</p><div class="tagfoot"><div class="barcode"></div><span class="code">BRN 01</span></div></article>
+      <article class="tag workshops reveal"><span class="grommet"></span><p class="lane-eyebrow">Exchange Lane</p><h3>Carry On Workshops</h3><p class="sub">Get unstuck.</p><div class="tagfoot"><div class="barcode"></div><span class="code">WRK 02</span></div></article>
+      <article class="tag her reveal"><span class="grommet"></span><p class="lane-eyebrow">Exchange Lane</p><h3>HER Retreats</h3><p class="sub">Go all the way in.</p><div class="tagfoot"><div class="barcode"></div><span class="code">HER 03</span></div></article>
+      <article class="tag podcast reveal"><span class="grommet"></span><p class="lane-eyebrow">Exchange Lane</p><h3>The Podcast</h3><p class="sub">Unpack it in half an hour.</p><div class="tagfoot"><div class="barcode"></div><span class="code">POD 04</span></div></article>
+      <article class="tag shop reveal"><span class="grommet"></span><p class="lane-eyebrow">Exchange Lane</p><h3>The H.O.P.E. Shop</h3><p class="sub">Shop the tools.</p><div class="tagfoot"><div class="barcode"></div><span class="code">SHP 05</span></div></article>
+      <article class="tag house reveal"><span class="grommet"></span><span class="soon">COMING SOON</span><p class="lane-eyebrow">Exchange Lane</p><h3>The Exchange House</h3><p class="sub">A place of our own.</p><div class="tagfoot"><div class="barcode"></div><span class="code">HSE 06</span></div></article>
     </div>
   </div>
 </section>
@@ -124,7 +400,7 @@
     <div class="reveal">
       <p class="eyebrow">The signature takeaway</p>
       <h2>Every in-person exchange sends you home with a H.O.P.E. Bag.</h2>
-      <p>You can not buy it. You earn it by showing up and doing the work in the room. It holds tools, prompts, and keepsakes matched to your experience, so the work leaves the room in your hands and keeps going at home.</p>
+      <p>You do not buy it. You earn it by showing up and doing the work in the room. It holds tools, prompts, and keepsakes matched to your experience, so the work leaves the room in your hands and keeps going at home.</p>
       <div class="holds">
         <div class="hold"><b>CARRY ON TAG</b><span>The luggage tag that marks your lane.</span></div>
         <div class="hold"><b>AFFIRMATION CARDS</b><span>A set grouped by room.</span></div>
@@ -134,7 +410,7 @@
     </div>
     <div class="levels reveal">
       <div class="lvl"><b>Empowerment Brunch</b><p>The lightest bag. A warm welcome, a tag, a short card set, and a small keepsake.</p></div>
-      <div class="lvl"><b>Carry On Workshop</b><p>A working bag. Everything in the brunch bag, plus a session workbook and a tool tied to the skill you practiced.</p></div>
+      <div class="lvl"><b>Carry On Workshops</b><p>A working bag. Everything in the brunch bag, plus a session workbook, group-coaching prompts, and your plan on paper.</p></div>
       <div class="lvl"><b>HER Retreats</b><p>The fullest bag. A complete journal, the H.O.P.E. Journey workbook, ritual cards, a keepsake, and resources to carry forward.</p></div>
     </div>
   </div>
@@ -149,7 +425,7 @@
       <p>Every exchange you attend earns a stamp in its own ink. Watch the pages fill as you move through the lanes, until a single passport tells the whole story of where you have been. Better still, every stamp enters you into drawings for prizes that help you keep moving forward.</p>
       <div class="ink-row">
         <span class="ink" style="background:#C5746E">Brunch</span>
-        <span class="ink" style="background:#6F9072">Workshop</span>
+        <span class="ink" style="background:#6F9072">Workshops</span>
         <span class="ink" style="background:#4D1A33">HER</span>
         <span class="ink" style="background:#B8881F">Podcast</span>
         <span class="ink" style="background:#21160F">Shop</span>
@@ -246,7 +522,7 @@
       <h2>Real stories, <em>lighter bags.</em></h2>
       <p>Dr. Shay sits with the trauma, the wins, and the weird in between, sometimes solo and sometimes with guests, and trades some of it for something lighter. About a half hour at a time.</p>
       <p class="when">NEW EPISODES WEDNESDAYS &middot; LAUNCHING ON SPOTIFY JULY 1</p>
-      <a class="btn btn-gold" href="podcast/index.html">Listen on Spotify</a>
+      <a class="btn btn-gold" href="#">Listen on Spotify</a>
     </div>
   </div>
 </section>
@@ -257,7 +533,7 @@
     <p class="eyebrow">Meet the founder</p>
     <h2>Her story is the brand.</h2>
     <p>"Dr. Shukairo Baker, DNP, built THE Baggage Exchange from what she lived. She traded what weighed her down for what lifted her up, again and again, until the trading itself became the way through."</p>
-    <a class="btn btn-plum" href="about/index.html">Read her story</a>
+    <a class="btn btn-plum" href="#">Read her story</a>
   </div>
 </section>
 
@@ -268,39 +544,55 @@
     <h2>Ready to set something down?</h2>
     <p>Reach out about a retreat, bring a brunch or workshop to your group, or just connect. We respond personally, with no pressure and no obligation.</p>
     <div class="cta">
-      <a class="btn btn-gold" href="contact/index.html">Begin the exchange</a>
+      <a class="btn btn-gold" href="#">Begin the exchange</a>
       <a class="btn btn-plum" href="#lanes">Browse all experiences</a>
     </div>
   </div>
 </section>
 
 <!-- FOOTER -->
-<footer class="foot"><div class="wrap">
-<div class="grid">
-<div><div class="flogo"><img src="assets/logo-reversed.svg" alt="THE Baggage Exchange"></div>
-<p class="blurb">Where women trade what weighs them down for what lifts them up. A warm community walking the H.O.P.E. journey together, through Healing, Opportunity, Purpose, and Empowerment. Rooted in the Carolinas and in Black women, it welcomes women everywhere to set something heavy down and carry something lighter forward.</p></div>
-<div><h4>Explore</h4><ul>
-<li><a href="index.html#how">The H.O.P.E. Journey</a></li>
-<li><a href="index.html#lanes">Experiences</a></li>
-<li><a href="hope-bag/index.html">The H.O.P.E. Bag</a></li>
-<li><a href="index.html#passport">The Passport</a></li>
-<li><a href="index.html#podcast">The Podcast</a></li>
-<li><a href="about/index.html">About</a></li>
-</ul></div>
-<div><h4>Connect</h4><ul>
-<li><a href="tel:+17043122777">704.312.2777</a></li>
-<li><a href="tel:+18445053848">1.844.505.3848</a></li>
-<li><a href="mailto:hello@thebaggageexchange.org">hello@thebaggageexchange.org</a><span class="lbl">General inquiries</span></li>
-<li><a href="mailto:podcast@thebaggageexchange.org">podcast@thebaggageexchange.org</a><span class="lbl">Media and podcast inquiries</span></li>
-<li><a href="https://thebaggageexchange.org">thebaggageexchange.org</a></li>
-</ul></div>
-</div>
-<div class="legal-block">
-<p class="mark">THE BAGGAGE EXCHANGE&#8482;</p>
-<p>THE Baggage Exchange and The H.O.P.E. System are trademarks of The Baggage Exchange LLC.</p>
-<p>A trademark application has been submitted for THE BAGGAGE EXCHANGE. THE Baggage Exchange, The H.O.P.E. System, the H.O.P.E. Curriculum, the H.O.P.E. Journey, the Four H.O.P.E. Beats, the H.O.P.E. Bag, HER Retreats, related tools, training materials, content, and brand methods are original works of The Baggage Exchange LLC. Use, reproduction, teaching, certification, licensing, or facilitator training by another person or entity requires written permission and a written license from The Baggage Exchange LLC. Registration status is handled separately through counsel.</p>
-<p>&copy; 2026 The Baggage Exchange LLC. Trade what weighs you down for what lifts you up.</p>
-</div>
-</div></footer>
-<script src="assets/site.js"></script>
-</body></html>
+<footer class="foot">
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <div class="wm"><b>THE BAGGAGE</b> <span>EXCHANGE</span></div>
+        <p class="blurb">Where women trade what weighs them down for what lifts them up. A warm community walking the H.O.P.E. journey together, through Healing, Opportunity, Purpose, and Empowerment. Rooted in the Carolinas and in Black women, it welcomes women everywhere to set something heavy down and carry something lighter forward.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#how">The H.O.P.E. Journey</a></li>
+          <li><a href="#lanes">Experiences</a></li>
+          <li><a href="hope-bag/index.html">The H.O.P.E. Bag</a></li>
+          <li><a href="#passport">The Passport</a></li>
+          <li><a href="#podcast">The Podcast</a></li>
+          <li><a href="#founder">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="tel:+17043122777">704.312.2777</a></li>
+          <li><a href="tel:+18445053848">1.844.505.3848</a></li>
+          <li><a href="mailto:hello@thebaggageexchange.org">hello@thebaggageexchange.org</a><span class="lbl">General inquiries</span></li>
+          <li><a href="mailto:podcast@thebaggageexchange.org">podcast@thebaggageexchange.org</a><span class="lbl">Media and podcast inquiries</span></li>
+          <li><a href="https://thebaggageexchange.org">thebaggageexchange.org</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <p class="mark">THE BAGGAGE EXCHANGE&#8482;</p>
+      <p>THE Baggage Exchange and The H.O.P.E. System are trademarks of The Baggage Exchange LLC.</p>
+      <p>A trademark application has been submitted for THE BAGGAGE EXCHANGE. THE Baggage Exchange, The H.O.P.E. System, the H.O.P.E. Curriculum, the H.O.P.E. Journey, the Four H.O.P.E. Beats, the H.O.P.E. Bag, HER Retreats, related tools, training materials, content, and brand methods are original works of The Baggage Exchange LLC. Use, reproduction, teaching, certification, licensing, or facilitator training by another person or entity requires written permission and a written license from The Baggage Exchange LLC. Registration status is handled separately through counsel.</p>
+      <p class="copy">&copy; 2026 The Baggage Exchange LLC. Trade what weighs you down for what lifts you up.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+// scroll reveal
+const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.14});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+<script>/*navjs*/(function(){var mb=document.querySelector(".menu-btn");var nav=document.querySelector(".nav");if(mb&&nav){mb.addEventListener("click",function(e){e.stopPropagation();nav.classList.toggle("nav-open");});}document.querySelectorAll(".navdrop-t").forEach(function(t){t.addEventListener("click",function(e){e.preventDefault();e.stopPropagation();var d=t.closest(".navdrop");var op=d.classList.contains("open");document.querySelectorAll(".navdrop.open").forEach(function(o){o.classList.remove("open");});if(!op)d.classList.add("open");});});document.addEventListener("click",function(e){if(!e.target.closest(".navdrop"))document.querySelectorAll(".navdrop.open").forEach(function(o){o.classList.remove("open");});if(nav&&!e.target.closest(".nav")&&!e.target.closest(".menu-btn"))nav.classList.remove("nav-open");});})();</script></body>
+</html>
