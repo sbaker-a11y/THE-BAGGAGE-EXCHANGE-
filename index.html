@@ -44,7 +44,7 @@ h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.08;color:var(-
 .head{position:sticky;top:0;z-index:50;background:rgba(61,18,38,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(217,169,60,.28)}
 .head .wrap{display:flex;align-items:center;justify-content:space-between;height:74px}
 .brand{display:flex;align-items:center;gap:12px}
-.brand svg{width:34px;height:34px}
+.brand img{height:52px;width:auto;display:block}
 .brand .wm{font-family:var(--display);color:var(--cream);font-size:18px;line-height:1}
 .brand .wm b{font-weight:800;letter-spacing:.01em}
 .brand .wm span{font-weight:400;letter-spacing:.34em;font-size:15px}
@@ -173,6 +173,7 @@ h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.08;color:var(-
 /* ---------- FOOTER ---------- */
 .foot{background:var(--plum-deep);color:rgba(251,245,236,.82);padding:64px 0 30px}
 .foot .grid{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:40px;margin-bottom:40px}
+.foot .flogo{height:84px;width:auto;display:block;margin-bottom:12px}
 .foot .wm{font-family:var(--display);color:var(--cream);font-size:20px;margin-bottom:12px}
 .foot .wm b{font-weight:800}.foot .wm span{letter-spacing:.3em;font-weight:400;font-size:16px}
 .foot .blurb{font-size:14px;max-width:30em;color:rgba(251,245,236,.7)}
@@ -263,8 +264,7 @@ h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.08;color:var(-
 <header class="head">
   <div class="wrap">
     <a class="brand" href="#top" aria-label="THE Baggage Exchange home">
-      <svg viewBox="0 0 100 100" aria-hidden="true"><defs><linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F0D27A"/><stop offset=".5" stop-color="#D4A53C"/><stop offset="1" stop-color="#A9781F"/></linearGradient></defs><path d="M34 30 q0-12 16-12 q16 0 16 12" fill="none" stroke="#FBF5EC" stroke-width="6" stroke-linecap="round"/><rect x="22" y="30" width="56" height="46" rx="8" fill="url(#g1)"/><line x1="22" y1="50" x2="78" y2="50" stroke="#4D1A33" stroke-width="5"/><rect x="44" y="44" width="12" height="12" rx="2" fill="#4D1A33"/></svg>
-      <span class="wm"><b>THE BAGGAGE</b><br><span>EXCHANGE</span></span>
+      <img src="assets/TheBaggageExchange_Glossy_Logo_Reversed.svg" alt="THE Baggage Exchange">
     </a>
     <nav class="nav"><a href="index.html" class="active">Home</a><div class="navdrop"><button class="navdrop-t" type="button">About <span class="car">&#9662;</span></button><div class="navdrop-m"><a href="about/index.html">Meet the Founder</a><a href="TheBaggageExchange_Press.html">Press &amp; Speaking</a></div></div><div class="navdrop"><button class="navdrop-t" type="button">The H.O.P.E. System&#8482; <span class="car">&#9662;</span></button><div class="navdrop-m"><a href="hope-curriculum/index.html">The H.O.P.E. Curriculum</a><a href="hope-journey/index.html">The H.O.P.E. Journey</a><a href="hope-beats/index.html">The Four H.O.P.E. Beats</a><a href="hope-bag/index.html">The H.O.P.E. Bag</a></div></div><div class="navdrop"><button class="navdrop-t" type="button">Experiences <span class="car">&#9662;</span></button><div class="navdrop-m"><a href="hope-passport/index.html">The H.O.P.E. Passport</a><a href="experiences/index.html">Experiences Hub</a><a href="experiences/index.html">Coaching</a><a href="empowerment-brunch/index.html">Empowerment Brunch</a><a href="carry-on-workshops/index.html">Carry On Workshop</a><a href="her-retreats/index.html">HER Retreats</a><a href="podcast/index.html">The Podcast</a><a href="hope-shop/index.html">The H.O.P.E. Shop</a><a href="exchange-house/index.html">The Exchange House</a></div></div><div class="navdrop"><button class="navdrop-t" type="button">Bring Us In <span class="car">&#9662;</span></button><div class="navdrop-m"><a href="corporate-experiences/index.html">Corporate Experiences</a><a href="community-engagement/index.html">Community Engagement</a><a href="certification-licensing/index.html">Certification or Licensing</a></div></div><a class="btn btn-gold" href="contact/index.html">Contact</a></nav>
     <button class="menu-btn" aria-label="Menu">&#9776;</button>
@@ -555,7 +555,7 @@ h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.08;color:var(-
   <div class="wrap">
     <div class="grid">
       <div>
-        <div class="wm"><b>THE BAGGAGE</b> <span>EXCHANGE</span></div>
+        <img class="flogo" src="assets/TheBaggageExchange_Glossy_Logo_Reversed.svg" alt="THE Baggage Exchange">
         <p class="blurb">Where women trade what weighs them down for what lifts them up. A warm community walking the H.O.P.E. journey together, through Healing, Opportunity, Purpose, and Empowerment. Rooted in the Carolinas and in Black women, it welcomes women everywhere to set something heavy down and carry something lighter forward.</p>
       </div>
       <div>
